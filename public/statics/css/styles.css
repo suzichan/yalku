@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+ * (es) Estilos principales
+ * (en) central stylesheet
+ * 
+ * @creator DAN / Mexico
+ * @file styles.css
+ * @ 23-07-2013
+ * 
+ */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body, html {
+	line-height: 1;
+	width: 100%;
+	height: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************************************
+ * @general stuffs
+*************************************/
+.hidden { position:absolute; left: -999em; /*LTR*/ top: -999em; }
+.clear { clear: both; }
+.btn { display: block; }
+strong, b, em { font-weight:bold; }
+a, select, input, textarea, .btn { outline: none; }
+a { text-decoration: none; color: #d3d3d3; }
+sup { font-size: 8px; vertical-align: super; }
+.underlined { text-decoration: underline; }
+
+
+/*************************************
+ * @web style
+*************************************/
+body, #wrapper { background:#0e0d0f url(../img/bg_home.jpg) no-repeat top center; }
+body { color:#ffffff; font-family: "NissanRegular", Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: normal; }
+#wrapper { width: 990px; height: 900px; margin:0 auto; }
+
+
+/*  ------------------  header  ------------------- */
+a.logo, img.logo { display: block; width: 131px; height: 163px; }
+a.logo { float: left; }
+
+
+/*  ------------------  contenido  ------------------- */
+
+
+/*  ------------------  footer  ------------------- */
+
