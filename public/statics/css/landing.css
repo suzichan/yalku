@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+ * (es) Estilos principales
+ * (en) central stylesheet
+ * 
+ * @creator DAN / Mexico
+ * @file styles.css
+ * @ 23-07-2013
+ * 
+ */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body, html {
+	line-height: 1;
+	width: 100%;
+	height: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************************************
+ * @general stuffs
+*************************************/
+.hidden { position:absolute; left: -999em; /*LTR*/ top: -999em; }
+.clear { clear: both; }
+.btn { display: block; }
+strong, b, em { font-weight:bold; }
+a, select, input, textarea, .btn { outline: none; }
+a { text-decoration: none; color: #d3d3d3; }
+sup { font-size: 8px; vertical-align: super; }
+.underlined { text-decoration: underline; }
+
+.btn { display: block; padding: 9px 68px; font-size: 16px; cursor: pointer; }
+
+
+/*************************************
+ * @web style
+*************************************/
+body { background:#000 url(../img/bg_home.jpg) no-repeat top center; }
+
+body { color:#ffffff; font-family: Verdana, Geneva, sans-serif; font-size: 100%; font-style: normal; font-weight: normal; }
+#wrapper { width: 1200px; height: 1312px; margin: 0 auto; background:#000 url(../img/bg_landing.jpg) no-repeat top center; }
+
+
+/*  ------------------  header  ------------------- */
+#header { height: 110px; }
+
+#header .socialLink, #header .socialLink img, #header .socialLink span { display: block; }
+#header .socialLink { margin-top: 35px; width: 315px; height: 37px; float: right; }
+#header .socialLink img, #header .socialLink span { float: left; }
+#header .socialLink img { width: 36px; height: 37px; }
+#header .socialLink span { margin-left: 20px; height: 37px; line-height: 37px; color: #fff;  }
+
+
+/*  ------------------  contenido  ------------------- */
+.container { float: left; width: 50%; }
+
+.leftContainer .content { padding: 195px 0 0 150px; }
+.rightContainer .content { padding: 85px 0 0 0; }
+h2 { color: #72b942; font-weight: bold; font-size: 27px; }
+h3 { margin-top: 18px; font-size: 18px; }
+h4 { margin-top: 110px; margin-bottom: 30px; font-size: 30px; font-weight: bold; }
+.btnGreen { color: #fff; background: #66ab40; border: 1px solid #828282; border-top: 2px solid #cfcfcf; -webkit-border-radius: 2px; border-radius: 2px; }
+
+form { margin-top: 55px; width: 355px; min-height: 315px; }
+input[type="text"], input[type="email"] { margin-bottom: 15px; padding: 0 20px; width: 355px; height: 32px; border: none; background: url(../img/bg_input.jpg); font-size: 13px; color: #fff; }
+form input[type="submit"] { margin-top: 5px; float: right; }
+
+a.btnApp { margin-right: 18px; }
+.rightContainer .btnGreen { margin: 23px 0 0 85px; }
+
+
+/*  ------------------  footer  ------------------- */
+
