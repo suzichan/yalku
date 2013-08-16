@@ -1,88 +1,111 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<!-- Ultima actualizacion: 15 agosto 2013 -->
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta http-equiv="Content-Language" Content="es,en">
-		<title>Yalku</title>
-		<link rel="stylesheet" href="statics/css/landing.css" type="text/css" media="screen"/>
-		<link rel="shortcut icon" href="statics/img/favicon.ico" type="image/x-icon" />
-		<script type="text/javascript" src="statics/js/jquery-1.10.2.min.js"></script>
-		<script type="text/javascript">
-		$(document).ready( function(event) {
-			/*$("#btnSend").click( function(e){
-				e.preventDefault();
-				$("form").hide();
-				$("#thanks").show();
-			} );*/
-			$("#btnKnowMore").click( function(e){
-				e.preventDefault();
-				$("#knowMore").slideDown("slow");
-			} );
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<!-- Ultima actualizacion: 14 agosto 2013 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" Content="es,en">
+	<title>Yalku</title>
+	<link rel="stylesheet" href="/public/statics/css/landing.css" type="text/css" media="screen"/>
+	<link rel="shortcut icon" href="/public/statics/img/favicon.ico" type="image/x-icon" />
+		
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+				$('#enviar').click(
+					function(event){
+						event.preventDefault();
+						var nombre = $('#nombre').val();
+						var email = $('#email').val();
+						if(nombre != "" && email!= ""){
+							$.post("interesadospost", { "nombre": nombre, "email":email },
+								function(data){
+									if(data=="OK"){
+										$("form").hide();
+										$("#thanks").show();
+									}
+								}
+							);
+						}
+					}
+				);
+
+				/*$("#btnSend").click( function(e){
+					e.preventDefault();
+					$("form").hide();
+					$("#thanks").show();
+				} );*/
+
+				$("#btnKnowMore").click( function(e){
+					e.preventDefault();
+					$("#knowMore").slideDown("slow");
+				} );
 		});
-		</script>
-	</head>
-	<body lang=es>
-		<div id="wrapper">
-			<div id="container">
-				<!--     ****************     #header   *******************     -->
-				<div id="header">
-					<h1 class="hidden">YALKU</h1>
-					<a class="socialLink" title="YALKU en Facebook" href="https://www.facebook.com/YalKumexico" target="_blank">
-						<img class="facebook" alt="Logotipo Nissan" src="statics/img/icono_facebook.png" /> <span>FACEBOOK.COM/YALKUMEXICO</span>
-					</a>
-				</div><!-- #header -->
 
 
-				<!--     ****************     #content   *******************     -->
-				<div id="content">
-					<div class="leftContainer container">
-						<div class="content">
+	</script>
+</head>
+<body>
+		
 
-							<h2>Qué tan aventurero eres?</h2>
-							<h3>Sé de los primeros en descubrirlo!</h3>
+	<div id="wrapper">
+		<div id="container">
+			<!--     ****************     #header   *******************     -->
+			<div id="header">
+				<h1 class="hidden">YALKU</h1>
+				<a class="socialLink" title="YALKU en Facebook" href="https://www.facebook.com/YalKumexico" target="_blank">
+					<img class="facebook" alt="Logotipo Nissan" src="/public/statics/img/icono_facebook.png" /> <span>FACEBOOK.COM/YALKUMEXICO</span>
+				</a>
+			</div><!-- #header -->
 
-							<!--     -->
-							<form method="post">
-								<label class="hidden">*NOMBRE</label>
-								<input title="Por favor, rellena este campo." type="text" name="" value="" placeholder="*NOMBRE" required  />
-								<label class="hidden">*EMAIL</label>
-								<input title="Por favor, introduce una direcci&oacute;n de correo v&aacute;lida." type="email" name="" value="" placeholder="*EMAIL" required />
-	        					<input id="btnSend" class="btn btnGreen" type="submit" value="ENVIAR" />
-							</form>
-							
-							<div id="thanks">
-								<h5>&#161;Gracias!</h5>
-								<p>Tus datos han sido registrados correctamente. Espera nuestras noticias muy pronto y sé de los primeros en descubrirlo.</p>
-							</div>
-							<!--     -->
 
-							<h4>Próximamente en</h4>
-							<a class="btnApp" title="YALKU en Google Play" href="https://play.google.com/store" target="_blank"><img alt="YALKU en Google Play" src="statics/img/btn_googleplay_landing.png" /></a>
-							<a class="btnApp" title="YALKU en App Store" href="http://store.apple.com/mx" target="_blank"><img alt="YALKU en App Store" src="statics/img/btn_appstore_landing.png" /></a>
+			<!--     ****************     #content   *******************     -->
+			<div id="content">
+				<div class="leftContainer container">
+					<div class="content">
 
-						</div><!-- .content -->
-					</div><!-- .container -->
+						<h2>¿Qué tan aventurero eres?</h2>
+						<h3>!Sé de los primeros en descubrirlo!</h3>
 
-					<div class="rightContainer container">
-						<div class="content">
-							<img src="statics/img/celular.png" />
-							<button id="btnKnowMore" class="btn btnGreen" type="button" onclick="showKnowMoreInfo();">CONOCE MÁS</button>
-							<div id="knowMore">
-								<p><em>Qué tanto conoces de México? Te gusta la adrenalina o la aventura?</em></p>
-								<p>YalKu brinda servicios turísticos que te permiten conocer y disfrutar el lado aventurero de México, a través de una amplia gama de opciones 100% nacionales que te conectarán con la naturaleza, la cultura y la adenalina de este país.</p>
-								<p>Si tienes alguna duda por el momento no dudes en contactarnos.</p>
-							</div>
+						<!--     -->
+						<form method="post">
+							<label class="hidden">*NOMBRE</label>
+							<input id="nombre" title="Por favor, rellena este campo." type="text" name="" value="" placeholder="*NOMBRE" required  />
+							<label class="hidden">*EMAIL</label>
+							<input id="email" title="Por favor, introduce una direcci&oacute;n de correo v&aacute;lida." type="email" name="" value="" placeholder="*EMAIL" required />
+        					<input id="enviar" id="btnSend" class="btn btnGreen" type="submit" value="ENVIAR" />
+						</form>
+						
+						<div id="thanks">
+							<h5>&#161;Gracias!</h5>
+							<p>Tus datos han sido registrados correctamente. Espera nuestras noticias muy pronto y sé de los primeros en descubrirlo.</p>
 						</div>
-					</div><!-- .container -->
-				</div><!-- #content -->
+						<!--     -->
 
+						<h4>Próximamente en</h4>
+						<a class="btnApp" title="YALKU en Google Play" href="" ><img alt="YALKU en Google Play" src="/public/statics/img/btn_googleplay_landing.png" /></a>
+						<a class="btnApp" title="YALKU en App Store" href="" ><img alt="YALKU en App Store" src="/public/statics/img/btn_appstore_landing.png" /></a>
 
-				<!--     ****************     #footer   *******************     -->
-				<!--div id="footer">
-					<p>Nissan&copy; 2013</p>
-				</div><!-- #footer -->
-			</div><!-- #container -->
-		</div><!-- #wrapper -->
-	</body>
+					</div><!-- .content -->
+				</div><!-- .container -->
+
+				<div class="rightContainer container">
+					<div class="content">
+						<img src="/public/statics/img/celular.png" />
+						<button id="btnKnowMore" class="btn btnGreen" type="button" >CONOCE MÁS</button>
+						<div id="knowMore">
+							<p><em>¿Qué tanto conoces de México? , ¿Te gusta la adrenalina o la aventura?</em></p>
+							<p>YalKu brinda servicios turísticos que te permiten conocer y disfrutar el lado aventurero de México, a través de una amplia gama de opciones 100% nacionales que te conectarán con la naturaleza, la cultura y la adrenalina de este país.</p>
+							<p>Si tienes alguna duda por el momento no dudes en contactarnos.</p>
+						</div>
+					</div>
+				</div><!-- .container -->
+			</div><!-- #content -->
+
+		</div><!-- #container -->
+	</div><!-- #wrapper -->
+</body>
 </html>
