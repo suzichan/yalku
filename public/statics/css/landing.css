@@ -74,9 +74,7 @@ sup { font-size: 8px; vertical-align: super; }
 /*************************************
  * @web style
 *************************************/
-body { background:#000 url(../img/bg_home.jpg) no-repeat top center; }
-
-body { color:#ffffff; font-family: Verdana, Geneva, sans-serif; font-size: 100%; font-style: normal; font-weight: normal; }
+body { color:#ffffff; font-family: Verdana, Geneva, sans-serif; font-size: 100%; font-style: normal; font-weight: normal; background:#000; }
 #wrapper { width: 1200px; height: 1312px; margin: 0 auto; background:#000 url(../img/bg_landing.jpg) no-repeat top center; }
 
 
