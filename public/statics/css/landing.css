@@ -62,7 +62,7 @@ table {
 .hidden { position:absolute; left: -999em; /*LTR*/ top: -999em; }
 .clear { clear: both; }
 .btn { display: block; }
-strong, b, em { font-weight:bold; }
+strong, b { font-weight:bold; }
 a, select, input, textarea, .btn { outline: none; }
 a { text-decoration: none; color: #d3d3d3; }
 sup { font-size: 8px; vertical-align: super; }
@@ -98,15 +98,21 @@ body { color:#ffffff; font-family: Verdana, Geneva, sans-serif; font-size: 100%;
 h2 { color: #72b942; font-weight: bold; font-size: 27px; }
 h3 { margin-top: 18px; font-size: 18px; }
 h4 { margin-top: 110px; margin-bottom: 30px; font-size: 30px; font-weight: bold; }
+h5 { font-size: 20px; font-weight: bold; }
 .btnGreen { color: #fff; background: #66ab40; border: 1px solid #828282; border-top: 2px solid #cfcfcf; -webkit-border-radius: 2px; border-radius: 2px; }
 
-form { margin-top: 55px; width: 355px; min-height: 315px; }
-input[type="text"], input[type="email"] { margin-bottom: 15px; padding: 0 20px; width: 355px; height: 32px; border: none; background: url(../img/bg_input.jpg); font-size: 13px; color: #fff; }
+form, #thanks { margin-top: 55px; width: 355px; min-height: 315px; }
+form { overflow: hidden; }
+input[type="text"], input[type="email"] { margin-bottom: 15px; padding: 0 20px; width: 355px; height: 32px; border: none; background: url(../img/bg_input.jpg) no-repeat; font-size: 13px; color: #fff; }
 form input[type="submit"] { margin-top: 5px; float: right; }
+
+#thanks { display: none; }
+#thanks p { font-size: 13px; margin-top: 10px; line-height: 15px; }
 
 a.btnApp { margin-right: 18px; }
 .rightContainer .btnGreen { margin: 23px 0 0 85px; }
 
-
-/*  ------------------  footer  ------------------- */
+#knowMore { display: none; width: 440px; padding-top: 30px; text-align: justify; }
+#knowMore p { margin: 22px auto; }
+p em { color: #66ad40; }
 
