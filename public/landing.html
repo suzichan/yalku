@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<!-- Ultima actualizacion: 15 agosto 2013 -->
+		<!-- Ultima actualizacion: 21 agosto 2013 -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="Content-Language" Content="es,en">
 		<title>Yalku</title>
 		<link rel="stylesheet" href="statics/css/landing.css" type="text/css" media="screen"/>
 		<link rel="shortcut icon" href="statics/img/favicon.ico" type="image/x-icon" />
-		<script type="text/javascript" src="statics/js/jquery-1.10.2.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script type="text/javascript">
 		$(document).ready( function(event) {
+			$('#enviar').click(
+				function(event){
+					event.preventDefault();
+					var nombre = $('#nombre').val();
+					var email = $('#email').val();
+					if(nombre != "" && email!= ""){
+						$.post("interesadospost", { "nombre": nombre, "email":email },
+							function(data){
+								if(data=="OK"){
+									$("form").hide();
+									$("#thanks").show();
+								}
+							}
+						);
+					}
+				}
+			);
 			$("#btnKnowMore").click( function(e){
 				e.preventDefault();
 				$("#knowMore").slideDown("slow");
@@ -44,10 +62,10 @@
 							<!--     -->
 							<form method="post">
 								<label class="hidden">*NOMBRE</label>
-								<input title="Por favor, rellena este campo." type="text" name="" value="" placeholder="*NOMBRE" required  />
+								<input id="nombre" title="Por favor, rellena este campo." type="text" name="" value="" placeholder="*NOMBRE" required  />
 								<label class="hidden">*EMAIL</label>
-								<input title="Por favor, introduce una direcci&oacute;n de correo v&aacute;lida." type="email" name="" value="" placeholder="*EMAIL" required />
-	        					<input id="btnSend" class="btn btnGreen" type="submit" value="ENVIAR" />
+								<input id="email" title="Por favor, introduce una direcci&oacute;n de correo v&aacute;lida." type="email" name="" value="" placeholder="*EMAIL" required />
+	        					<input id="enviar btnSend" class="btn btnGreen" type="submit" value="ENVIAR" />
 								<div class="clear"></div>
 
 	        					<label class="terms">Acepto <a id="termsLink" href="#">términos y condiciones</a></label>
@@ -94,11 +112,11 @@
 							<!--     -->
 
 							<h4>Próximamente en</h4>
-							<a class="btnApp" title="YALKU en Google Play" href="https://play.google.com/store" target="_blank"><img alt="YALKU en Google Play" src="statics/img/btn_googleplay_landing.png" /></a>
-							<a class="btnApp" title="YALKU en App Store" href="http://store.apple.com/mx" target="_blank"><img alt="YALKU en App Store" src="statics/img/btn_appstore_landing.png" /></a>
+							<a class="btnApp" title="YALKU en Google Play" href=""><img alt="YALKU en Google Play" src="statics/img/btn_googleplay_landing.png" /></a>
+							<a class="btnApp" title="YALKU en App Store" href=""><img alt="YALKU en App Store" src="statics/img/btn_appstore_landing.png" /></a>
 
 						</div><!-- .content -->
-					</div><!-- .container -->
+					</div><!-- .leftContainer -->
 
 					<div class="rightContainer container">
 						<div class="content">
@@ -109,15 +127,11 @@
 								<p>YalKu brinda servicios turísticos que te permiten conocer y disfrutar el lado aventurero de México, a través de una amplia gama de opciones 100% nacionales que te conectarán con la naturaleza, la cultura y la adrenalina de este país.</p>
 								<p>Si tienes alguna duda por el momento no dudes en contactarnos.</p>
 							</div>
-						</div>
-					</div><!-- .container -->
+						</div><!-- .content -->
+					</div><!-- .rightContainer -->
+				
 				</div><!-- #content -->
 
-
-				<!--     ****************     #footer   *******************     -->
-				<!--div id="footer">
-					<p>Nissan&copy; 2013</p>
-				</div><!-- #footer -->
 			</div><!-- #container -->
 		</div><!-- #wrapper -->
 	</body>

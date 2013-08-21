@@ -113,7 +113,7 @@ input.terms { float: right; }
 #terms h2 { font-size: 11px; margin-bottom: 10px; }
 #terms p, #terms li { margin-bottom: 13px; line-height: 14px; }
 
-ol { list-style-position: inside; list-style-type: decimal; padding-left: 15px; }
+ol { list-style-position: inside; list-style-type: decimal; }
 ul { list-style-position: inside; list-style-type: disc; padding-left: 15px; }
 
 #thanks { display: none; }
@@ -125,7 +125,6 @@ a.btnApp { margin-right: 18px; }
 #knowMore { display: none; width: 440px; padding-top: 30px; text-align: justify; line-height: 18px; }
 #knowMore p { margin: 22px auto; }
 p em { color: #66ad40; }
-
 
 /* scrollbar */
 ::-webkit-scrollbar {
@@ -145,15 +144,4 @@ p em { color: #66ad40; }
 
 
 
-
-
-#thanks { display: none; }
-#thanks p { font-size: 13px; margin-top: 10px; line-height: 15px; }
-
-a.btnApp { margin-right: 18px; }
-.rightContainer .btnGreen { margin: 23px 0 0 85px; }
-
-#knowMore { display: none; width: 440px; padding-top: 30px; text-align: justify; }
-#knowMore p { margin: 22px auto; }
-p em { color: #66ad40; }
 
