@@ -4,9 +4,9 @@
  * (es) Estilos principales
  * (en) central stylesheet
  * 
- * @creator DAN / Mexico
+ * @creator Susana Aguirre
  * @file styles.css
- * @ 23-07-2013
+ * @ 19-08-2013
  * 
  */
  
@@ -74,9 +74,7 @@ sup { font-size: 8px; vertical-align: super; }
 /*************************************
  * @web style
 *************************************/
-body { background:#000 url(../img/bg_home.jpg) no-repeat top center; }
-
-body { color:#ffffff; font-family: Verdana, Geneva, sans-serif; font-size: 100%; font-style: normal; font-weight: normal; }
+body { color:#ffffff; font-family: Verdana, Geneva, sans-serif; font-size: 100%; font-style: normal; font-weight: normal; background: #000; }
 #wrapper { width: 1200px; height: 1312px; margin: 0 auto; background:#000 url(../img/bg_landing.jpg) no-repeat top center; }
 
 
@@ -97,14 +95,57 @@ body { color:#ffffff; font-family: Verdana, Geneva, sans-serif; font-size: 100%;
 .rightContainer .content { padding: 85px 0 0 0; }
 h2 { color: #72b942; font-weight: bold; font-size: 27px; }
 h3 { margin-top: 18px; font-size: 18px; }
-h4 { margin-top: 110px; margin-bottom: 30px; font-size: 30px; font-weight: bold; }
+h4 { margin-top: 60px; margin-bottom: 30px; font-size: 30px; font-weight: bold; }
 h5 { font-size: 20px; font-weight: bold; }
 .btnGreen { color: #fff; background: #66ab40; border: 1px solid #828282; border-top: 2px solid #cfcfcf; -webkit-border-radius: 2px; border-radius: 2px; }
 
-form, #thanks { margin-top: 55px; width: 355px; min-height: 315px; }
+form, #thanks { margin-top: 55px; width: 355px; min-height: 365px; }
 form { overflow: hidden; }
 input[type="text"], input[type="email"] { margin-bottom: 15px; padding: 0 20px; width: 355px; height: 32px; border: none; background: url(../img/bg_input.jpg) no-repeat; font-size: 13px; color: #fff; }
 form input[type="submit"] { margin-top: 5px; float: right; }
+
+.terms { margin-top: 25px; }
+label.terms { float: right; font-size: 13px; }
+label.terms a { text-decoration: underline; }
+input.terms { float: right; }
+
+#terms { display: none; padding-right: 10px; height: 120px; margin-top: 30px; overflow-y: auto; font-size: 11px; color: #c9c9c9; clear: both; }
+#terms h2 { font-size: 11px; margin-bottom: 10px; }
+#terms p, #terms li { margin-bottom: 13px; line-height: 14px; }
+
+ol { list-style-position: inside; list-style-type: decimal; padding-left: 15px; }
+ul { list-style-position: inside; list-style-type: disc; padding-left: 15px; }
+
+#thanks { display: none; }
+#thanks p { font-size: 13px; margin-top: 10px; line-height: 15px; }
+
+a.btnApp { margin-right: 18px; }
+.rightContainer .btnGreen { margin: 23px 0 0 85px; }
+
+#knowMore { display: none; width: 440px; padding-top: 30px; text-align: justify; line-height: 18px; }
+#knowMore p { margin: 22px auto; }
+p em { color: #66ad40; }
+
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(201, 201, 201, 0.4); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(114, 185, 66, 1.0); 
+}
+
+
+
+
+
+
+
 
 #thanks { display: none; }
 #thanks p { font-size: 13px; margin-top: 10px; line-height: 15px; }

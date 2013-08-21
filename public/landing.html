@@ -10,15 +10,14 @@
 		<script type="text/javascript" src="statics/js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript">
 		$(document).ready( function(event) {
-			/*$("#btnSend").click( function(e){
-				e.preventDefault();
-				$("form").hide();
-				$("#thanks").show();
-			} );*/
 			$("#btnKnowMore").click( function(e){
 				e.preventDefault();
 				$("#knowMore").slideDown("slow");
 			} );
+			$("#termsLink").click( function(e){
+				e.preventDefault();
+				$("#terms").slideDown("slow");
+			});
 		});
 		</script>
 	</head>
@@ -39,8 +38,8 @@
 					<div class="leftContainer container">
 						<div class="content">
 
-							<h2>Qué tan aventurero eres?</h2>
-							<h3>Sé de los primeros en descubrirlo!</h3>
+							<h2>¿Qué tan aventurero eres?</h2>
+							<h3>¡Sé de los primeros en descubrirlo!</h3>
 
 							<!--     -->
 							<form method="post">
@@ -49,10 +48,47 @@
 								<label class="hidden">*EMAIL</label>
 								<input title="Por favor, introduce una direcci&oacute;n de correo v&aacute;lida." type="email" name="" value="" placeholder="*EMAIL" required />
 	        					<input id="btnSend" class="btn btnGreen" type="submit" value="ENVIAR" />
+								<div class="clear"></div>
+
+	        					<label class="terms">Acepto <a id="termsLink" href="#">términos y condiciones</a></label>
+	        					<input class="terms" type="checkbox" value="" checked />
+	        					<div class="clear"></div>
+								<div id="terms">
+									<h2>AVISO DE PRIVACIDAD</h2>
+
+									<p>De conformidad con lo previsto en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (en lo sucesivo denominada como "la Ley"), nos permitimos solicitarle leer cuidadosamente los Términos y Condiciones contenidos en este documento, ya que la simple aportación que haga de sus datos Personales o Datos Sensibles constituye la aceptación de estos Términos y Condiciones:</p>
+
+									<ol>
+										<li>YalKu será el responsable de los datos personales de conformidad a lo dispuesto por la fracción I del artículo 16 de la Ley, con domicilio en Monte Pelvoux 210, Lomas de Chapultepec, México D.F; 11000.</li>
+
+										<li>Los términos “Datos Personales” y “Datos Sensibles” tendrán el significado que se les atribuye en el artículo 3 de la Ley.</li>
+
+										<li>Los Datos Personales y/o Datos Sensibles que usted pueda proporcionar al Responsable tendrán el uso que en forma enunciativa pero no limitativa se describe a continuación:</li>
+
+										<ul>
+											<li>Para identificarle, ubicarle, comunicarle, contactarle, enviarle información y/o mercancía, así como su transmisión a terceros por cualquier medio que permita la ley. El uso de los Datos Personales y Datos Sensibles tendrá relación directa con la relación que usted tiene en su carácter de consumidor. La temporalidad del manejo de los Datos Personales y/o Datos Sensibles será indefinida a partir de la fecha en que usted los proporcionó al Responsable, que desde luego usted podrá oponerse en cualquier momento que lo considere oportuno.</li>
+										</ul>
+
+										<li>Una vez que usted entregue al Responsable sus Datos Personales o Datos Sensibles, le manifestamos que estos serán conservados en diferentes medios seguros que la tecnología permita, cuyo acceso estará limitado solamente a las personas físicas y/o morales con la que el Responsable tenga alguna relación jurídica. El Responsable contará con las medidas de seguridad que considere adecuadas para proteger el uso de sus Datos Personales y/o Datos Sensibles por parte de terceros no autorizados. En caso de requerimiento de alguna autoridad, los datos Personales y/o Datos Sensibles podrán ponerse a disposición de éstas, dentro del estricto cumplimiento a la Ley.</li>
+
+										<li>El tratamiento de sus datos Personales, que se han puesto a disposición del Responsable bajo cualquier forma o circunstancia, podrá ser efectuado por el Responsable de conformidad con los presentes términos y condiciones, por lo que desde este momento se entiende que usted autoriza expresamente al Responsable para tal efecto, hasta en tanto usted manifieste su oposición mediante alguno de los medios que indica la Ley.</li>
+
+										<li>Usted tendrá en todo momento el acceso a sus Datos Personales y/o Datos Sensibles, ya sea para solicitar su rectificación, cancelación u oposición de conformidad con lo dispuesto en la Ley, en forma escrita, electrónica o telefónica, dirigiendo su mensaje genéricamente a YalKu al siguiente domicilio: Monte Pelvoux 210, Lomas de Chapultepec, México D.F; 11000. Para lo anterior, deberá hacernos saber fehacientemente los Datos Personales y/o Datos Sensibles que usted desea sean rectificados, cancelados o revisados, así como el propósito para el cual los aportó y el nombre del Responsable a quien se los entregó y en general cumplir los requisitos mencionados en el art. 29 de la Ley.</li>
+
+										<li>Tratándose de sus Datos Sensibles, usted tendrá derecho a que el Responsable le informe sobre cualquier transferencia que llegare a efectuar de los mismos a cualquier tercero, y para ello le será notificada tal acción por cualquier medio, ya sea escrito, telefónico, electrónico, óptico, sonoro, visual o cualquier otro que la tecnología permita ahora o en lo futuro. De darse el caso, usted tendrá derecho a oponerse a ello, debiendo seguir el proceso mencionado en el punto inmediato anterior.</li>
+
+										<li>En el caso de que el Responsable requiera usar sus Datos Personales y/o Datos Sensibles con fines diferentes a los señalados en el presente Aviso de Privacidad, contactará con usted ya sea en forma escrita, telefónica, electrónica, o por cualquier medio óptico, sonoro, visual u otro que la tecnología permita ahora o en lo futuro y le explicará los nuevos usos que pretenda darle a dicha información a fin de recabar su autorización.</li>
+
+										<li>Tratándose de Datos Sensibles, usted deberá proporcionar al Responsable su consentimiento expreso y por escrito para su tratamiento, a través de su firma autógrafa, firma electrónica, o cualquier mecanismo de autenticación que al efecto se establezca.</li>
+
+										<li>Con la aceptación del presente aviso de privacidad, usted declara no estar inscrito en el Registro Público de Consumidores de la PROFECO y por lo tanto acepta cualquier interacción con fines comerciales ya sea con el responsable de los datos personales. </li>
+									</ol>
+								</div>
+								<div class="clear"></div>
 							</form>
 							
 							<div id="thanks">
-								<h5>&#161;Gracias!</h5>
+								<h5>¡Gracias!</h5>
 								<p>Tus datos han sido registrados correctamente. Espera nuestras noticias muy pronto y sé de los primeros en descubrirlo.</p>
 							</div>
 							<!--     -->
@@ -69,8 +105,8 @@
 							<img src="statics/img/celular.png" />
 							<button id="btnKnowMore" class="btn btnGreen" type="button" onclick="showKnowMoreInfo();">CONOCE MÁS</button>
 							<div id="knowMore">
-								<p><em>Qué tanto conoces de México? Te gusta la adrenalina o la aventura?</em></p>
-								<p>YalKu brinda servicios turísticos que te permiten conocer y disfrutar el lado aventurero de México, a través de una amplia gama de opciones 100% nacionales que te conectarán con la naturaleza, la cultura y la adenalina de este país.</p>
+								<p><em>¿Qué tanto conoces de México? ¿Te gusta la adrenalina o la aventura?</em></p>
+								<p>YalKu brinda servicios turísticos que te permiten conocer y disfrutar el lado aventurero de México, a través de una amplia gama de opciones 100% nacionales que te conectarán con la naturaleza, la cultura y la adrenalina de este país.</p>
 								<p>Si tienes alguna duda por el momento no dudes en contactarnos.</p>
 							</div>
 						</div>
