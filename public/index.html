@@ -1,15 +1,43 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<!-- Ultima actualizacion: 16 agosto 2013 -->
+		<!-- Ultima actualizacion: 26 agosto 2013 -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Yalku</title>
 		<link rel="stylesheet" href="statics/css/styles.css" type="text/css" media="screen"/>
 		<link rel="stylesheet" href="statics/css/fonts.css" type="text/css" media="screen"/>
+		<link rel="stylesheet" href="statics/css/fx.css" type="text/css" media="screen"/>
 		<link rel="shortcut icon" href="statics/img/favicon.ico" type="image/x-icon" />
-		<!--script type="text/javascript" src="statics/js/jquery-1.10.2.min.js"></script>
-		<script type="text/javascript" src="statics/js/basic.js"></script-->
+		<script type="text/javascript" src="statics/js/jquery-1.10.2.min.js"></script>
+		<!--script type="text/javascript" src="statics/js/basic.js"></script-->
 		<script src="statics/js/modernizr.custom.js"></script>
+		<script type="text/javascript">
+			$(document).ready( function(event) {
+				/***************** start box hover effect **************/
+				$(".mediaBox").mouseenter( function(e) {
+					e.preventDefault();
+					if( $(this).hasClass("videoItemBox") ) {
+						$("iframe",this).stop().animate({
+							height: 279
+							}, '200');
+					}
+					$(".mediaInfoBox",this).stop().animate({
+							bottom: "0px"
+							}, '200');
+				}).mouseleave( function(e) {
+					e.preventDefault();
+					if( $(this).hasClass("videoItemBox") ) {
+						$("iframe",this).stop().animate({
+							height: 432
+							}, '200');
+					}
+					$(".mediaInfoBox",this).stop().animate({
+						bottom: "-153px"
+						}, '100');
+				} );
+				/***************** finish box hover effect **************/
+			});
+		</script>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -39,10 +67,10 @@
 					
 					<div class="bottomContainer container">
 						<ul class="menuMain menuHorizontal">
-							<li class="cl-effect-17"><a title="EXPLORAR" href="#" data-hover="EXPLORAR">EXPLORAR</a></li><span class="separator"><!-- separador --></span>
-							<li class="cl-effect-17"><a title="PLANEAR" href="#" data-hover="PLANEAR">PLANEAR</a></li><span class="separator"><!-- separador --></span>
-							<li class="cl-effect-17"><a title="FOROS" href="#" data-hover="FOROS">FOROS</a></li><span class="separator"><!-- separador --></span>
-							<li class="cl-effect-17"><a title="CONOCE MÁS" href="#" data-hover="CONOCE MÁS">CONOCE MÁS</a></li>
+							<li><a title="EXPLORAR" href="#" data-hover="EXPLORAR">EXPLORAR</a></li><span class="separator"><!-- separador --></span>
+							<li><a title="PLANEAR" href="#" data-hover="PLANEAR">PLANEAR</a></li><span class="separator"><!-- separador --></span>
+							<li><a title="FOROS" href="#" data-hover="FOROS">FOROS</a></li><span class="separator"><!-- separador --></span>
+							<li><a title="CONOCE MÁS" href="#" data-hover="CONOCE MÁS">CONOCE MÁS</a></li>
 						</ul>
 						<ul class="menuSocial menuHorizontal">
 							<li><a title="YalKu en Facebook" href="#"><img class="hiddens" alt="" src="statics/img/logo_facebook.jpg" /></a></li>
@@ -52,46 +80,180 @@
 					</div><!-- .bottomContainer -->
 				</div><!-- #header -->
 
+				<div id="content">
 
 				<!--     ****************     #content   *******************     -->
-				<div id="content">
 					<div class="mediaContainer">
-						<!--div class="mediaBox">
-							<div class="mediaItemBox">
-								<div class="videoItemBox">
-									<iframe width="560" height="315" src="//www.youtube.com/embed/Dipnb7yYphM" frameborder="0" allowfullscreen></iframe>
-								</div>
-							</div>
-							<div class="mediaInfoBox">
-								<h3>COZUMEL</h3>
-								<dl>
-									<dt>Lugar:</dt> <dd>Zacatlan De Las Manzanas</dd>
-									<dt>Actividad:</dt> <dd>Caminata, Rapel</dd>
-									<dt>Calificaci&oacute;n:</dt> <dd>9.5</dd>
-									<dt>Nivel de Aventura:</dt> <dd>1, 2 y 3</dd>
-								</dl>
-								<a class="btn btnSeeMore" title="Ver m&aacute;s" href="#"><img alt="Ver m&aacute;s" src="statics/img/btn_ver_mas.png" /></a>
-							</div>
-						</div><!-- .mediaBox -->
+
 
 						<div class="mediaBoxContainer">
-							<div class="mediaBox box1">
+							<div class="mediaBox box1 box videoItemBox">
+								<div class="mediaItemBox">
+									
+										<iframe width="420" height="315" src="//www.youtube.com/embed/NUoeen8TVRI" frameborder="0" allowfullscreen></iframe>
+									
+								</div>
+								<div id="info1" class="mediaInfoBox">
+									<h3>COZUMEL</h3>
+									<ul>
+										<li><span>Lugar:&nbsp;</span> Zacatlan De Las Manzanas</li>
+										<li><span>Actividad:</span> Caminata, Rapel</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+									<a class="btn btnSeeMore" title="Ver m&aacute;s" href="#"><img alt="Ver m&aacute;s" src="statics/img/btn_ver_mas.png" /></a>
+								</div>
 							</div><!-- .mediaBox -->
-							<div class="mediaBox box1">
+
+							<div class="mediaBox box2 box">
+								<div class="mediaItemBox">
+									<div class="imageItemBox">
+										<img alt="ZACATLAN DE LA MANZANA Y PERA. Natacion." src="statics/img/home/ch/img1.jpg" />
+									</div>
+								</div>
+								<div class="mediaInfoBox">
+									<h3>VALLE DE BRAVO</h3>
+									<ul>
+										<li><span>Lugar:&nbsp;</span> Zacatlan De Las Manzanas</li>
+										<li><span>Actividad:</span> Caminata, Rapel, Tirolesa, Paracaidas</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+									<a class="btn btnSeeMore" title="Ver m&aacute;s" href="#"><img alt="Ver m&aacute;s" src="statics/img/btn_ver_mas.png" /></a>
+								</div>
 							</div><!-- .mediaBox -->
-							<div class="mediaBox box1">
+
+							<div class="mediaBox box3 box">
+								<div class="mediaItemBox">
+									<div class="imageItemBox">
+										<img alt="ZACATLAN DE LA MANZANA Y PERA. Natacion." src="statics/img/home/m/img1.jpg" />
+									</div>
+								</div>
+								<div class="mediaInfoBox">
+									<h3>COZUMEL</h3>
+									<ul>
+										<li><span>Lugar:&nbsp;</span> Zacatlan De Las Manzanas</li>
+										<li><span>Actividad:</span> Caminata, Rapel</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+									<a class="btn btnSeeMore" title="Ver m&aacute;s" href="#"><img alt="Ver m&aacute;s" src="statics/img/btn_ver_mas.png" /></a>
+								</div>
 							</div><!-- .mediaBox -->
-							<div class="mediaBox box1">
+							
+							<div class="mediaBox box4 box">
+								<div class="mediaItemBox">
+									<div class="imageItemBox">
+										<img alt="ZACATLAN DE LA MANZANA Y PERA. Natacion." src="statics/img/home/m/img2.jpg" />
+									</div>
+								</div>
+								<div class="mediaInfoBox">
+									<h3>ZACATLAN DE LAS MANZANAS</h3>
+									<ul>
+										<li><span>Lugar:&nbsp;</span> Zacatlan De Las Manzanas</li>
+										<li><span>Actividad:</span> Caminata, Rapel</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+									<a class="btn btnSeeMore" title="Ver m&aacute;s" href="#"><img alt="Ver m&aacute;s" src="statics/img/btn_ver_mas.png" /></a>
+								</div>
 							</div><!-- .mediaBox -->
-							<div class="mediaBox box1">
+							
+							<div class="mediaBox box5 box">
+								<div class="mediaItemBox">
+									<div class="imageItemBox">
+										<img alt="ZACATLAN DE LA MANZANA Y PERA. Natacion." src="statics/img/home/ch/img2.jpg" />
+									</div>
+								</div>
+								<div class="mediaInfoBox">
+									<h3>IXTAPAN DE LA SAL</h3>
+									<ul>
+										<li><span>Lugar:&nbsp;</span> Zacatlan De Las Manzanas</li>
+										<li><span>Actividad:</span> Caminata, Rapel</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+									<a class="btn btnSeeMore" title="Ver m&aacute;s" href="#"><img alt="Ver m&aacute;s" src="statics/img/btn_ver_mas.png" /></a>
+								</div>
 							</div><!-- .mediaBox -->
-							<div class="mediaBox box1">
+
+							<div class="mediaBox box6 box">
+								<div class="mediaItemBox">
+									<div class="imageItemBox">
+										<img alt="ZACATLAN DE LA MANZANA Y PERA. Natacion." src="statics/img/home/ch/img3.jpg" />
+									</div>
+								</div>
+								<div class="mediaInfoBox">
+									<h3>IXTAPAN DE LA SAL</h3>
+									<ul>
+										<li><span>Lugar:&nbsp;</span> Zacatlan De Las Manzanas</li>
+										<li><span>Actividad:</span> Caminata, Rapel</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+									<a class="btn btnSeeMore" title="Ver m&aacute;s" href="#"><img alt="Ver m&aacute;s" src="statics/img/btn_ver_mas.png" /></a>
+								</div>
 							</div><!-- .mediaBox -->
-							<div class="mediaBox box1">
+
+							<div class="mediaBox box7 box">
+								<div class="mediaItemBox">
+									<div class="imageItemBox">
+										<img alt="ZACATLAN DE LA MANZANA Y PERA. Natacion." src="statics/img/home/g/img1.jpg" />
+									</div>
+								</div>
+								<div class="mediaInfoBox">
+									<h3>ZACATLAN DE LA MANZANA Y LA PERA</h3>
+									<ul>
+										<li><span>Lugar:&nbsp;</span> Zacatlan De Las Manzanas</li>
+										<li><span>Actividad:</span> Caminata, Rapel, Natacion</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+									<a class="btn btnSeeMore" title="Ver m&aacute;s" href="#"><img alt="Ver m&aacute;s" src="statics/img/btn_ver_mas.png" /></a>
+								</div>
 							</div><!-- .mediaBox -->
-							<div class="mediaBox box1">
+
+							<div class="mediaBox box8 box">
+								<div class="mediaItemBox">
+									<div class="imageItemBox">
+										<img alt="ZACATLAN DE LA MANZANA Y PERA. Natacion." src="statics/img/home/m/img4.jpg" />
+									</div>
+								</div>
+								<div class="mediaInfoBox">
+									<h3>VALLE DE BRAVO</h3>
+									<ul>
+										<li><span>Lugar:&nbsp;</span> Zacatlan De Las Manzanas</li>
+										<li><span>Actividad:</span> Caminata, Rapel, Tirolesa, Paracaidas</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+									<a class="btn btnSeeMore" title="Ver m&aacute;s" href="#"><img alt="Ver m&aacute;s" src="statics/img/btn_ver_mas.png" /></a>
+								</div>
 							</div><!-- .mediaBox -->
-						</div><!-- .mediaBox -->
+							<div class="clear"></div>
+						</div><!-- .mediaBoxContainer -->
+
+
+						<div class="mediaBoxContainer">
+							<div class="mediaBox box1 box">
+								<div class="mediaItemBox">
+									<div>
+										<img alt="COZUMEL. Rapel." src="statics/img/home/m/img3.jpg" />
+									</div>
+								</div>
+								<div id="info1" class="mediaInfoBox">
+									<h3>COZUMEL</h3>
+									<ul>
+										<li><span>Lugar:&nbsp;</span> Zacatlan De Las Manzanas</li>
+										<li><span>Actividad:</span> Caminata, Rapel</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+									<a class="btn btnSeeMore" title="Ver m&aacute;s" href="#"><img alt="Ver m&aacute;s" src="statics/img/btn_ver_mas.png" /></a>
+								</div>
+							</div><!-- .mediaBox -->
+						</div><!-- .mediaBoxContainer -->
+
 
 						<div class="clear"><!-- clear --></div>
 					</div><!-- .container -->
@@ -118,5 +280,5 @@
 	</body>
 </html>
 <!--
-¡'<>!"·$%&/()=?¿Ç*^¨Ñ_:;,.-ñ´`+ç≤|@#¢∞¬÷“”≠´‚}][{~–…„'
+¿¡'<>!"·$%&/()=?¿Ç*^¨Ñ_:;,.-ñ´`+ç≤|@#¢∞¬÷“”≠´‚}][{~–…„'
 	-->
