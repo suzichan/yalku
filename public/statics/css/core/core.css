@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+ * (es) Estilos principales
+ * (en) central stylesheet
+ * 
+ * @creator Susana Aguirre
+ * @file styles.css
+ * @05/SEP/2013
+ * 
+ */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body, html {
+	line-height: 1;
+	width: 100%;
+	height: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************************************
+ * @general stuffs
+*************************************/
+.hidden { position:absolute; left: -999em; /*LTR*/ top: -999em; }
+.clear { clear: both; }
+.btn { display: block; }
+strong, b, em { font-weight:bold; }
+a, select, input, textarea, .btn { outline: none; }
+a { text-decoration: none; color: #d3d3d3; }
+sup { font-size: 8px; vertical-align: super; }
+.underlined { text-decoration: underline; }
+
+
+/*  ------------------  botones  ------------------- */
+.btn { display: block; }
+.btnGreen { padding: 9px 68px; }
+.btnSeeMore, .btnSeeMore img { width: 25px; height: 25px; }
+
+
+/*  ------------------  menus  ------------------- */
+.menuHorizontal { width: auto; }
+.menuHorizontal li, .menuHorizontal li a { display: block; }
+.menuHorizontal li { float: left; }
+
+.separator { display: block; float: left; width: 1px; height: 100%; }
+
+#header .menuHorizontal li a:hover, #header .menuLogin a:hover { color: #7bd24b; }
+
+/*  ------------------  listas  ------------------- */
+
+
+/*  ------------------  formularios  ------------------- */
+
+
+
+/*************************************
+ * @web style
+*************************************/
+body { color: #fff; font-family: Verdana, Geneva, sans-serif; font-size: 100%; font-style: normal; font-weight: normal; background:#000; }
+#wrapper { /*min-height: 1312px;*/ margin: 0 auto; background:#000; padding-bottom: 46px; }
+#wrapper, #footer { width: 1024px; /*width: 1280px;*/ }
+
+
+/*  ------------------  header  ------------------- */
+#header, #header .logoContainer { height: 150px; }
+#header { background: #181818 url(../img/bg_header1.jpg); overflow: hidden; }
+#header .container { float: left; }
+#header .logoContainer { width: 274px; }
+#header .topContainer, #header .bottomContainer { width: 665px; padding: 0 20px 0 65px; }
+#header .topContainer { height: 80px; }
+#header .bottomContainer { height: 70px; }
+
+#header .logoContainer a, #header .logoContainer a img { display: block; width: 230px; height: 90px; }
+#header .logoContainer a { margin: 28px 0 0 38px; }
+
+#header .topContainer div, #header .topContainer .menuLogin { float: left; margin-top: 27px; height: 35px; }
+	#header .menuSearch { width: 380px; }
+	#header .menuLogin { width: 180px; margin-left: 50px; }
+	#header .menuApps { width: 242px; }
+
+	#header .menuSearch label { display: block; float: left; width: 155px; padding-top: 12px; font-family: 'HelveticaNeueBoldCondensed','YanoneBold',Helvetica,sans-serif; font-size: 12px; line-height: 15px; }
+	#header .menuSearch input { float: right; margin-top: 5px; width: 220px; height: 25px; padding: 0 10px; background-color: #ffffff; border: 1px solid #919191; color: #747474; }
+	
+	#header .menuLogin li, #header .menuLogin li a { font-size: 13px; height: 35px; line-height: 35px; }
+	#header .menuLogin .separator { background-color: #a1c637; margin: 0 10px; }
+
+	/* para el efecto subrayado */
+	/*#header .menuLogin li { padding-top: 2px; }
+	#header .menuLogin li a { line-height: 31px; }*/
+
+	#header .menuApps { width: auto; float: right !important; }
+	#header .menuApps .logoStore { display: none; }
+	#header .menuApps.displayLogos { margin-top: 14px; }
+	#header .menuApps.displayLogos .logoStore { display: inline-block; width: 48px; height: 55px; margin-left: 10px; }
+	#header .menuApps.displayLogos .logoApp { display: none; }
+
+	#header .menuMain, #header .menuMain li, #header .menuMain li a { font-size: 14px; height: 22px; line-height: 22px; }
+	#header .menuMain { float: left; margin-top: 24px; }
+	#header .menuMain .separator { background-color: #555; margin: 0 34px; }
+	
+	#header .menuSocial, #header .menuSocial li, #header .menuSocial li a, #header .menuSocial li a img { height: 31px; }
+	#header .menuSocial { float: right; margin-top: 17px; }
+	#header .menuSocial li { margin-left: 5px; float: right; }
+
+/*  ------------------  contenido  ------------------- */
+#content .container {  }
+
+
+	/*  ------------------  HOME  ------------------- */
+	.mediaBoxContainer { position: relative; color: #fafaff; /*background: rgba(170,255,60,.2);*/ }
+	.box { float: left; overflow: hidden; position: relative; }
+
+	.mediaBox { width: 340px; height: 345px; margin-left: 1px; margin-bottom: 1px; }
+
+	.box .mediaInfoBox { position: absolute; background: rgba(0,0,0,.7); bottom: -153px; left: 0; height: 153px; width: 100%; }
+		.mediaInfoBox .btn { position: absolute; top: 112px; right: 8px;  }
+		.mediaInfoBox h3, .mediaInfoBox ul { position: absolute; }
+		.mediaInfoBox h3 { top: 0; left: 0; display: block; width: 38%; margin-top: 0; padding-top: 25px; padding-left: 3%; padding-right: 2%; 
+			font-family: 'HelveticaNeueBoldCondensed','YanoneRegular',Helvetica,sans-serif; font-size: 24px; line-height: 30px; text-transform: uppercase; }
+		.mediaInfoBox ul { top: 0; right: 0; padding-top: 23px; display: block; width: 56%; font-size: 13px; }
+			.mediaInfoBox li { font-family: 'LatoHairline',Helvetica,sans-serif; font-size: 14px; line-height: 15px; padding: 4px 0; }
+			.mediaInfoBox li span { font-family: 'LatoRegular','YanoneLight',Helvetica,sans-serif; font-size: 12px; }
+	
+	.box .mediaItemBox, .box .mediaItemBox .imageItemBox, .box .mediaItemBox iframe, .box .mediaItemBox img { width: 100%; height: 100%; }
+		.imageItemBox { overflow: hidden; position: relative; }
+		.box .imageItemBox img { display: block; position: absolute; top: 0; left: -50%; width: auto; }
+
+
+	/*  ------------------  DETAIL  ------------------- */
+	#detailContent { background: #ffffff; color: #000; }
+	#headDetail, #headDetail .map, #headDetail iframe { height: 255px; }
+		#headDetail img, #headDetail .halfSize, #headDetail .map { display: block; float: left; }
+		#headDetail img, #headDetail .halfSize { height: 100%; margin-right: 1px; }
+			#headDetail .halfSize { position: relative; width: 255px; overflow: hidden; background: yellow; }
+			#headDetail .halfSize img { position: absolute; width: auto; left: -50%; }
+		#headDetail img.normal { width: 510px; }
+		#headDetail .map, #headDetail iframe { width: 255px; }
+		#headDetail .map { position: relative; }
+		#headDetail .map small { position: absolute; bottom: 0; right: 0; padding: 2px 5px; background: #000; font-size: 50%; }
+		#headDetail .map small a { color: #7bd24b !important; }
+
+	#detailContent .left, #detailContent .right { float: left; padding-bottom: 30px; }
+		#detailContent .left { width: 674px; }
+			#detailContent .infoDataSection { padding: 0 47px 0 30px; }
+			#detailContent .placeData { position: relative; margin-top: 55px; padding-bottom: 30px; }
+					
+				.infoDataSection .dataList li span, .infoDataSection h3 { font-family: Verdana; font-weight: bold; font-size: 14px; }
+				.infoDataSection .dataList li { margin: 8px 0; font-family: Verdana; font-size: 14px; }
+				.infoDataSection h3 { margin-top: 30px; }
+				.infoDataSection h4 { margin-top: 15px; font-size: 12px; }
+				.infoDataSection p { margin: 8px 0 27px; font-size: 13px; line-height: 22px; }
+
+	.btnGallery { display: block; position: absolute; right: 25px; top: 0px; width: 48px; height: 47px; background: url(../../img/btn_camara.jpg) no-repeat 0 0; }
+	.btnAddTip { display: block; position: absolute; bottom: 0; right: 25px; width: 151px; height: 33px; background: url('../../img/btn_agregar_sugerencia.jpg') no-repeat 0 0; }
+	.horizontalSeparator { height: 1px; background-color: #b2b2b2; }
+		.left .horizontalSeparator { width: 625px; margin: 25px 0 10px 30px; }
+
+
+
+		#detailContent .right { width: 350px; }
+			.tipsContainer, #carouselTips, #carouselTips .tipsListContainer { width: 215px; }
+
+			.tipsContainer { /*w:270px;h:395px;*/ padding: 40px 25px 20px 30px; 
+				height: 335px; margin: 55px auto;
+				color: #fff; font-size: 12px; line-height: 20px;
+				background: #000000; -webkit-box-shadow:  0px 0px 20px 4px #444; box-shadow:  0px 0px 20px 4px #444; }
+
+			h4 { color: #36ae40; font-weight: bold; }
+			.tipsContainer p { margin: 10px 0 25px; padding-right: 5px; font-size: 13px; line-height: 22px; font-family: Verdana; }
+
+			#carouselTips { height: 305px; overflow: hidden; }
+			#carouselTips .tipsListContainer ul li { margin-right: 30px; }
+			#carouselTips .tipsListContainer ul li span { display: block; width:215px; height:265px; overflow-y: auto; }
+
+			.carouselBtns { margin: 15 auto 0; width: 100px; height: 12px; background: black }
+			.carouselBtns button { display: block; float: left; width: 16px; height: 12px; margin: 0 2px; padding: 0; 
+				border: none; background: #000000 url("../../img/punto_verde_gris.jpg") no-repeat 2px 0px; }
+			.carouselBtns button.selected { background-position: -10px 0px; }
+			.carouselBtns button:hover { cursor: pointer; }
+
+			.textBox { width: 200px; margin: 0 auto; font-weight: bold; font-family: Verdana; font-size: 13px; line-height: 26px; }
+
+		
+
+/*  ------------------  footer  ------------------- */
+#footer { position: fixed; bottom: 0; height: 46px; background: #1f1f1f url(../img/bg_footer.jpg) repeat top; }
+#footer a, #footer p { color: #626262; margin-top: 23px; font-size: 12px; font-weight: bold; }
+#footer p { width: auto; float: right; margin-right: 145px; }
+#footer a { display: block; width: auto; float: left; margin-left: 155px; }
+#footer a:hover { text-decoration: underline; }
+
+
+/*  ------------------  estilos para la scrollbar en chrome  ------------------- */
+::-webkit-scrollbar { width: 9px; }
+::-webkit-scrollbar-button {  background-color: blue; }
+::-webkit-scrollbar-track { background-color: rgba(170,170,170,.3); border-radius: 3px; box-shadow: inset 0 0 6px rgba(0,0,0,0.5); }
+::-webkit-scrollbar-track-piece { background-color: none; }
+::-webkit-scrollbar-thumb { background:rgba(54, 174, 64, 0.9); border-radius: 3px; box-shadow: inset 0 0 6px rgba(0,0,0,0.5); }
+::-webkit-scrollbar-corner { background-color: white; }
+::-webkit-resizer { background-color: #red;}
+
+
+/*  ------------------  fix para mozilla en el show/hide de la informaci'on de un video en el home  ------------------  */
+	@-moz-document url-prefix(http://),url-prefix(https://) { 
+	  .videoItemBox .mediaItemBox {/*w:425px; h:432px;*/
+	     width: 336px;
+	     height: 341px;
+	     margin: 2px auto;/**/
+	  }
+
+	/*  ------------------  estilos para la scrollbar en firefox  ------------------- */
+	
+}/* terminan fixes para mozilla */
+

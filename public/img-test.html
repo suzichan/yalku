@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!-- 
+		Ultima actualizacion: 12/SEP/2013
+		Cambios: imágenes en el home adaptables al tamaño.
+		 -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Yalku</title>
+		<style type="text/css">
+			.imgContainer { overflow: hidden; position: relative; }
+			.imgContainer.big { width: 852px; }
+			.imgContainer.little { height: 214px; }
+			.imgContainer.little, .imgContainer.medium { width: 425px; }
+			.imgContainer.big, .imgContainer.medium { height: 432px; }
+			.imgContainer img { display: block; height: 100%; }
+			.imgContainer.medium img { position: absolute; top: 0; left: -50%; }
+			img { position: fixed; width: 90%; bottom: 50%; height: auto; }
+		</style>
+	</head>
+	<body>
+		<!--h1>Adaptaci&oacute;n de im&aacute;genes</h1>
+
+		<h2>Imagen grande (tama&ntilde;o original 852x432)</h2>
+		<div class="imgContainer big">
+			<img src="statics/img/home/g/img1.jpg" />
+		</div>
+		
+		<h2>Imagen media (misma altura a la grande pero menor ancho 425x432)</h2>
+		<div class="imgContainer medium">
+			<img src="statics/img/home/g/img1.jpg" />
+		</div>
+		
+		<h2>Imagen chica (tama&ntilde;o casi del 50% en ancho y alto a la grande 425x214)</h2>
+		<div class="imgContainer little">
+			<img src="statics/img/home/g/img1.jpg" />
+		</div-->
+		<img class="fixed" src="statics/img/home/g/img1.jpg" />
+	</body>
+</html>
