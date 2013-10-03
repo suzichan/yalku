@@ -153,8 +153,8 @@ body { color: #fff; font-family: Verdana, Geneva, sans-serif; font-size: 100%; f
 	.box .mediaInfoBox { position: absolute; background: rgba(0,0,0,.7); bottom: -153px; left: 0; height: 153px; width: 100%; }
 		.mediaInfoBox .btn { position: absolute; top: 112px; right: 8px;  }
 		.mediaInfoBox h3, .mediaInfoBox ul { position: absolute; }
-		.mediaInfoBox h3 { top: 0; left: 0; display: block; width: 38%; margin-top: 0; padding-top: 25px; padding-left: 3%; padding-right: 2%; 
-			font-family: 'HelveticaNeueBoldCondensed','YanoneRegular',Helvetica,sans-serif; font-size: 24px; line-height: 30px; text-transform: uppercase; }
+		.mediaInfoBox h3 { top: 0; left: 0; display: block; width: 38%; margin-top: 0; padding-top: 25px; padding-left: 4.5%; padding-right: 2%; 
+			font-family: 'HelveticaNeueBoldCondensed','YanoneRegular',Helvetica,sans-serif; font-size: 20px; line-height: 26px; text-transform: uppercase; }
 		.mediaInfoBox ul { top: 0; right: 0; padding-top: 23px; display: block; width: 56%; font-size: 13px; }
 			.mediaInfoBox li { font-family: 'LatoHairline',Helvetica,sans-serif; font-size: 14px; line-height: 15px; padding: 4px 0; }
 			.mediaInfoBox li span { font-family: 'LatoRegular','YanoneLight',Helvetica,sans-serif; font-size: 12px; }
