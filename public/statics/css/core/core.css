@@ -95,8 +95,18 @@ sup { font-size: 8px; vertical-align: super; }
  * @web style
 *************************************/
 body { color: #fff; font-family: Verdana, Geneva, sans-serif; font-size: 100%; font-style: normal; font-weight: normal; background:#000; }
-#wrapper { /*min-height: 1312px;*/ margin: 0 auto; background:#000; padding-bottom: 46px; }
-#wrapper, #footer { width: 1024px; /*width: 1280px;*/ }
+#wrapper { /*min-height: 1312px;*/position: relative; margin: 0 auto; background:#000; padding-bottom: 46px; }
+#wrapper, #footer, #searchWrapper { width: 1024px; /*width: 1280px;*/ }
+#container { position: relative; z-index: 1; }
+
+
+/*  ------------------  Seccion de busqueda  ------------------- */
+#searchWrapper { display: nones; position: absolute; height: 100%; z-index: 5; background: rgba(0,0,0,.8);/**/ color: #fff; font-family: Verdana, Arial, sans-serif; font-size: 24px; font-weight: bold; padding-top: 1px; }
+#searchWrapper form { display: block; width: 630px; margin: 300px auto 0; }
+#searchWrapper label { display: block; margin-bottom: 80px; }
+#searchWrapper input { -webkit-appearance: textfield; }
+#searchWrapper input[type=text] { background: none; border:none; font-size: 30px; color: #fff; width: 555px; height: 67px; line-height: 67px; }
+#searchWrapper input[type=submit] { display: block; float: right; background: url(../../img/lupa-verde.png) no-repeat top center; width: 42px; height: 67px; margin-top: 0px; border: none; }
 
 
 /*  ------------------  header  ------------------- */
