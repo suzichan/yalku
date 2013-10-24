@@ -76,7 +76,14 @@
 						<div class="bodyDetail">
 							<div class="left">
 								<div class="placeData infoDataSection">
-									<a class="btnGallery btn" title="Galería" href="#"><span class="hidden">Galería</span></a>
+									<ul id="filtersList">
+										<li><a class="location selected" href=""><img class="hidden" src="statics/img/icons/location_black.jpg" /></a></li>
+										<li><a class="hike" href=""><img class="hidden" src="statics/img/icons/hike_black.jpg" /></a></li>
+										<li><a class="bike" href=""><img class="hidden" src="statics/img/icons/bike_black.jpg" /></a></li>
+										<li><a class="water" href=""><img class="hidden" src="statics/img/icons/water_black.jpg" /></a></li>
+										<li><a class="air" href=""><img class="hidden" src="statics/img/icons/air_black.jpg" /></a></li>
+										<li><a class="atv" href=""><img class="hidden" src="statics/img/icons/atv_black.jpg" /></a></li>
+									</ul>
 
 									<ul class="dataList">
 										<li><span>Lugar:&nbsp;</span> Cozumel</li>
@@ -91,8 +98,11 @@
 
 									<p>Morbi suscipit dui vitae mi scelerisque dapibus. Proin iaculis at risus et sagittis. Proin in nisi et dui pellentesque laoreet. Suspendisse potenti. Integer a eleifend ligula. Aenean et tempus sem. Ut in interdum augue. Nam dapibus adipiscing sem, a convallis purus. Pellentesque aliquam consequat porttitor. Mauris in sollicitudin est. Ut porta nibh ut porta molestie. Nulla feugiat luctus nulla vel fermentum.</p>
 
-									<a class="btnAddTip btn" title="Agregar Sugerencia" href="#"><span class="hidden">Agregar Sugerencia</span></a>
-
+									<div class="footBtns">
+										<a class="btnGallery btn" title="Galería" href="#"><span class="hidden">Galería</span></a>
+										<a class="btnAddPlace btn" title="Agregar a mis listas" href="#"><span class="hidden">Agregar</span></a>
+										<a class="btnAddTip btn" title="Agregar Sugerencia" href="#"><span class="hidden">Agregar Sugerencia</span></a>
+									</div>
 								</div><!-- .placeData -->
 
 								<div class="horizontalSeparator"><!-- Separador horizontal auxiliar --></div>
@@ -107,7 +117,18 @@
 									<h4>Nombre y fecha</h4>
 
 									<p>Ut vitae arcu id felis bibendum blandit sollicitudin sed nisi. Vestibulum non consectetur enim. Sed enim purus, faucibus et rhoncus convallis, mattis ut urna. Integer quam ligula, lacinia eget arcu et, molestie ullamcorper arcu. Curabitur vitae rutrum leo. Aliquam commodo congue urna vel sollicitudin. Nullam in tempor felis. Maecenas ornare tempor turpis id accumsan.</p>
+
+									<h4>Nombre y fecha</h4>
+
+									<p>Ut vitae arcu id felis bibendum blandit sollicitudin sed nisi. Vestibulum non consectetur enim. Sed enim purus, faucibus et rhoncus convallis, mattis ut urna. Integer quam ligula, lacinia eget arcu et, molestie ullamcorper arcu. Curabitur vitae rutrum leo. Aliquam commodo congue urna vel sollicitudin. Nullam in tempor felis. Maecenas ornare tempor turpis id accumsan.</p>
+
+									<a class="btn" title="Ver más" href="">Ver más.</a>
+									<div class="clear"></div>
 								</div><!-- .opinionsData -->
+
+								<div class="horizontalSeparator"><!-- Separador horizontal auxiliar --></div>
+
+
 							</div><!-- .left -->
 
 							<div class="right">
@@ -152,37 +173,159 @@
 									    </div> 
 									</div><!-- .carouselTips -->  
 								</div><!-- .tipsContainer -->
-
-								<div class="textBox">
-									<!--ul>
-										<li><span>Actividades Relacionadas:</span> Caminata, Bucear, Escalar, Rapel</li>
-									</ul-->
-									<p>Actividades Relacionadas: Caminata, Bucear, Escalar, Rapel</p>
-								</div>
 							</div><!-- .right -->
 							
 							<div class="clear"><!-- clear --></div>
-						</div><!-- .bodyDetail -->
 
-						<div class="listsSection">
-							<div class="headListsSection">
-								<select>
-									<option>LISTAS DE ACTIVIDADES</option>
-								</select>
-								<h5>NOMBRE</h5>
-								<a title="NUEVA LISTA" href="">NUEVA LISTA</a> <span class="separator"><!-- separador --></span>
-								<a title="SINCRONIZAR LISTA" href="">SINCRONIZAR LISTA</a>
+							<div class="relatedActivities">
+								<h3>Actividades Relacionadas:</h3>
+
+								<div class="activityBlock">
+									<span class="imageContainer">
+										<img alt="Cozumel" src="statics/img/home/img1.jpg" />
+									</span>
+
+									<ul class="dataList">
+										<li><span>Lugar:&nbsp;</span> Cozumel</li>
+										<li><span>Actividad:</span> Caminata, Rapel</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+
+									<ul class="activitiesIcons">
+										<li><img src="statics/img/icons/location_gray.jpg" /></li>
+										<li><img src="statics/img/icons/hike_gray.jpg" /></li>
+										<li><img src="statics/img/icons/bike_gray.jpg" /></li>
+										<li><img src="statics/img/icons/water_gray.jpg" /></li>
+										<li><img src="statics/img/icons/air_gray.jpg" /></li>
+										<li><img src="statics/img/icons/atv_gray.jpg" /></li>
+									</ul>
+									<div class="clear"><!-- clear --></div>
+								</div><!-- .activityBlock -->
+
+								<div class="activityBlock">
+									<span class="imageContainer">
+										<img alt="Cozumel" src="statics/img/home/img2.jpg" />
+									</span>
+
+									<ul class="dataList">
+										<li><span>Lugar:&nbsp;</span> Cozumel</li>
+										<li><span>Actividad:</span> Caminata, Rapel</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+
+									<ul class="activitiesIcons">
+										<li><img src="statics/img/icons/location_gray.jpg" /></li>
+										<li><img src="statics/img/icons/bike_gray.jpg" /></li>
+										<li><img src="statics/img/icons/water_gray.jpg" /></li>
+										<li><img src="statics/img/icons/atv_gray.jpg" /></li>
+									</ul>
+									<div class="clear"><!-- clear --></div>
+								</div><!-- .activityBlock -->
+
+								<div class="activityBlock">
+									<span class="imageContainer">
+										<img alt="Cozumel" src="statics/img/home/img3.jpg" />
+									</span>
+
+									<ul class="dataList">
+										<li><span>Lugar:&nbsp;</span> Cozumel</li>
+										<li><span>Actividad:</span> Caminata, Rapel</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+
+									<ul class="activitiesIcons">
+										<li><img src="statics/img/icons/atv_gray.jpg" /></li>
+									</ul>
+									<div class="clear"><!-- clear --></div>
+								</div><!-- .activityBlock -->
+
+								<div class="activityBlock">
+									<span class="imageContainer">
+										<img alt="Cozumel" src="statics/img/home/img4.jpg" />
+									</span>
+
+									<ul class="dataList">
+										<li><span>Lugar:&nbsp;</span> Cozumel</li>
+										<li><span>Actividad:</span> Caminata, Rapel</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+
+									<ul class="activitiesIcons">
+										<li><img src="statics/img/icons/location_gray.jpg" /></li>
+										<li><img src="statics/img/icons/bike_gray.jpg" /></li>
+										<li><img src="statics/img/icons/air_gray.jpg" /></li>
+									</ul>
+									<div class="clear"><!-- clear --></div>
+								</div><!-- .activityBlock -->
+
+								<div class="activityBlock">
+									<span class="imageContainer">
+										<img alt="Cozumel" src="statics/img/home/img5.jpg" />
+									</span>
+
+									<ul class="dataList">
+										<li><span>Lugar:&nbsp;</span> Cozumel</li>
+										<li><span>Actividad:</span> Caminata, Rapel</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+
+									<ul class="activitiesIcons">
+										<li><img src="statics/img/icons/hike_gray.jpg" /></li>
+										<li><img src="statics/img/icons/bike_gray.jpg" /></li>
+										<li><img src="statics/img/icons/water_gray.jpg" /></li>
+										<li><img src="statics/img/icons/air_gray.jpg" /></li>
+										<li><img src="statics/img/icons/atv_gray.jpg" /></li>
+									</ul>
+									<div class="clear"><!-- clear --></div>
+								</div><!-- .activityBlock -->
+
+								<div class="activityBlock">
+									<span class="imageContainer">
+										<img alt="Cozumel" src="statics/img/home/img6.jpg" />
+									</span>
+
+									<ul class="dataList">
+										<li><span>Lugar:&nbsp;</span> Cozumel</li>
+										<li><span>Actividad:</span> Caminata, Rapel</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+
+									<ul class="activitiesIcons">
+										<li><img src="statics/img/icons/bike_gray.jpg" /></li>
+										<li><img src="statics/img/icons/water_gray.jpg" /></li>
+										<li><img src="statics/img/icons/atv_gray.jpg" /></li>
+									</ul>
+									<div class="clear"><!-- clear --></div>
+								</div><!-- .activityBlock -->
+
+								<div class="activityBlock">
+									<span class="imageContainer">
+										<img alt="Cozumel" src="statics/img/home/img7.jpg" />
+									</span>
+
+									<ul class="dataList">
+										<li><span>Lugar:&nbsp;</span> Cozumel</li>
+										<li><span>Actividad:</span> Caminata, Rapel</li>
+										<li><span>Calificaci&oacute;n:</span> 9.5</li>
+										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									</ul>
+
+									<ul class="activitiesIcons">
+										<li><img src="statics/img/icons/air_gray.jpg" /></li>
+									</ul>
+									<div class="clear"><!-- clear --></div>
+								</div><!-- .activityBlock -->
+
+								<div class="clear"><!-- clear --></div>
 							</div>
-							<div class="bodyListsSection">
-								<ul>
-									<li><a href=""><img src="statics/img/home/img1.jpg" width="183" height="92" /></a></li>
-									<li><a href=""><img src="statics/img/home/img1.jpg" width="183" height="92" /></a></li>
-									<li><a href=""><img src="statics/img/home/img1.jpg" width="183" height="92" /></a></li>
-									<li><a href=""><img src="statics/img/home/img1.jpg" width="183" height="92" /></a></li>
-									<li><a href=""><img src="statics/img/home/img1.jpg" width="183" height="92" /></a></li>
-								</ul>
-							</div>
-						</div><!-- .listsWrapper -->
+
+						</div><!-- .bodyDetail -->
 					</div><!-- #detailContent -->
 					<!-- - - - - - - - - - - - - - - - - - termina detail container - - - - - - - - - - - - - - -->
 
