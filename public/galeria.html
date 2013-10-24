@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!-- Ultima actualizacion: 03/OCT/2013 -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Yalku</title>
+		<link rel="stylesheet" href="statics/css/styles.css" type="text/css" media="screen"/>
+		<link rel="shortcut icon" href="statics/img/favicon.ico" type="image/x-icon" />
+		<script type="text/javascript" src="statics/js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="statics/js/jcarousellite_1.0.1.js"></script>
+		<script type="text/javascript" src="statics/js/basic.js"></script>
+		<script src="statics/js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="container">
+				<!--     ****************     #header   *******************     -->
+				<div id="header">
+					<div class="logoContainer container">
+						<a title="YalKu M&eacute;xico" href="index.html"><img alt="Logo YalKu" src="statics/img/logo-yalku.png" /></a>
+					</div><!-- .logoContainer -->
+
+					<div class="topContainer container">
+						<div class="menuSearch">
+							<label>QUÉ QUIERES HACER?</label>
+							<input type="text" placeholder="Escribe un lugar, actividad o deporte" />
+						</div>
+						<ul class="menuLogin menuHorizontal">
+							<li class="cl-effect-5"><a title="REGISTRO" href="#"><span data-hover="REGISTRO">REGISTRO</span></a></li><span class="separator"><!-- separador --></span>
+							<li class="cl-effect-5"><a title="LOGIN" href="#"><span data-hover="LOGIN">LOGIN</span></a></li>
+						</ul>
+						<div class="menuApps displayLogos hidden">
+							<a class="logoStore" title="YALKU en App Store" href="#"><img src="statics/img/logo_apple.jpg" /></a>
+							<a class="logoStore" title="YALKU en Google Play" href="#"><img src="statics/img/logo_android.jpg" /></a>
+							<a class="logoApp" title="YALKU en App Store" href="#"><img src="statics/img/btn_appstore.jpg" /></a>
+							<a class="logoApp" title="YALKU en Google Play" href="#"><img src="statics/img/btn_googleplay.jpg" /></a>
+						</div>
+					</div><!-- .topContainer -->
+					
+					<div class="bottomContainer container">
+						<ul class="menuMain menuHorizontal">
+							<li><a title="EXPLORAR" href="#" data-hover="EXPLORAR">EXPLORAR</a></li><span class="separator"><!-- separador --></span>
+							<li><a title="PLANEAR" href="#" data-hover="PLANEAR">PLANEAR</a></li><span class="separator"><!-- separador --></span>
+							<li><a title="FOROS" href="#" data-hover="FOROS">FOROS</a></li><span class="separator"><!-- separador --></span>
+							<li><a title="CONOCE MÁS" href="#" data-hover="CONOCE MÁS">CONOCE MÁS</a></li>
+						</ul>
+						<ul class="menuSocial menuHorizontal">
+							<li><a title="YalKu en Facebook" href="#"><img class="hiddens" alt="" src="statics/img/logo_facebook.jpg" /></a></li>
+							<li><a title="YalKu en Twitter" href="#"><img class="hiddens" alt="" src="statics/img/logo_twitter.jpg" /></a></li>
+							<li><a title="YalKu en Youtube" href="#"><img class="hiddens" alt="" src="statics/img/logo_youtube.jpg" /></a></li>
+						</ul>
+					</div><!-- .bottomContainer -->
+				</div><!-- #header -->
+
+
+
+				<!--     ****************     #content   *******************     -->
+				<div id="content">
+					<div id="galleryContent">
+						<a id="closeGallery" title="Cerrar" href="detalle.html"><span class="hidden">CERRAR</span></a>
+						
+						<!--START SIMPLEVIEWER EMBED.-->
+						<script type="text/javascript" src="statics/fx/galeria/svcore/js/simpleviewer.js"></script>
+						<script type="text/javascript">
+							simpleviewer.ready(function () {
+								simpleviewer.load("sv-container", "1024px", "70%", "transparent", true);
+							});
+						</script>
+						<div id="sv-container"></div>
+						<!-- END SIMPLEVIEWER EMBED -->
+					</div>
+				</div><!-- #content -->
+
+
+
+				<!--     ****************     #footer   *******************     -->
+				<div id="footer">
+					<a href="#">Legales</a>
+					<p>YalKu 2013</p>
+				</div><!-- #footer -->
+
+			</div><!-- #container -->
+		</div><!-- #wrapper -->
+	</body>
+</html>
