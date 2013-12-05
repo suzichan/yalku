@@ -5,13 +5,11 @@
 * (en) CSS Effects Stylesheet
 *
 * @creator Susana Aguirre
-* @proyect YalKu Mexico
+* @project YalKu Mexico
 * @file fx.css
 * @05/09/2013
-*
 */
 /*  ------------------  efectos para menu  ------------------- */
-
 /* Effect 5: same word slide in */
 .cl-effect-5 a {
 	overflow: hidden;

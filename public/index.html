@@ -7,9 +7,8 @@
 		 -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Yalku</title>
-		<link rel="stylesheet" href="statics/css/styles.css" type="text/css" media="screen"/>
-		<link rel="stylesheet" href="statics/css/fonts.css" type="text/css" media="screen"/>
-		<link rel="stylesheet" href="statics/css/fx.css" type="text/css" media="screen"/>
+		<link rel="stylesheet" href="statics/css/styles.css" type="text/css"/>
+		<link rel="stylesheet" href="statics/css/page/home.css" type="text/css"/>
 		<link rel="shortcut icon" href="statics/img/favicon.ico" type="image/x-icon" />
 		<script type="text/javascript" src="statics/js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="statics/js/basic.js"></script>
@@ -24,6 +23,90 @@
 					<input type="submit" value="" />
 				</form>
 			</div><!-- #searchWrapper -->
+
+
+			<div id="loginWrapper" class="connectModalWindow">
+				<div class="container">
+					<a class="btn btnClose" href="#">X</a>
+					<h4>CONÉCTATE UTILIZANDO</h4>
+					<div class="loginSocialBtns">
+						<a class="btn btnFacebook" href="#"><span class="hidden">f Connect</span></a>
+						<a class="btn btnTwitter" href="#"><span class="hidden">t Sign in with Twitter</span></a>
+					</div>
+					<img class="separator" src="statics/img/login_horizontal_separator.jpg" />
+					<div class="clear"></div>
+
+					<form action="">
+						<fieldset>
+							<div class="row">
+								<label>Correo electrónico</label>
+								<input type="text" name="" value="ejemplo@dominio.com" />
+							</div>
+							<div class="row">
+								<label>Contraseña</label>
+								<input type="password" name="" value="jfkafhdjalfhd" />
+							</div>
+							<div class="horizontalSeparator"><!-- separator --></div>
+							<input type="submit" value="CREAR CUENTA" />
+						</fieldset>
+					</form>
+				</div>
+			</div><!-- #loginWrapper -->
+
+
+			<div id="registerWrapper" class="connectModalWindow">
+				<div class="container">
+					<a class="btn btnClose" href="#">X</a>
+					<h4>CONÉCTATE UTILIZANDO</h4>
+					<div class="loginSocialBtns">
+						<a class="btn btnFacebook" href="#"><span class="hidden">f Connect</span></a>
+						<a class="btn btnTwitter" href="#"><span class="hidden">t Sign in with Twitter</span></a>
+					</div>
+					<img class="separator" src="statics/img/login_horizontal_separator.jpg" />
+					<div class="clear"></div>
+
+					<h4 class="second">UTILIZANDO TU EMAIL<span></span></h4>
+					<form action="">
+						<fieldset>
+							<div class="row">
+								<label>* NOMBRE COMPLETO:</label>
+								<input type="text" name="" value="ejemplo@dominio.com" />
+							</div>
+							<div class="row">
+								<label>* USUARIO:</label>
+								<input type="text" name="" value="jfkafhdjalfhd" />
+							</div>
+							<div class="row">
+								<label>* CONTRASEÑA:</label>
+								<input type="password" name="" value="ejemplo@dominio.com" />
+							</div>
+							<div class="row">
+								<label>* CORREO ELECTRÓNICO:</label>
+								<input type="text" name="" value="jfkafhdjalfhd" />
+							</div>
+							<div class="row">
+								<label>&nbsp;&nbsp;CIUDAD:</label>
+								<input type="text" name="" value="ejemplo@dominio.com" />
+							</div>
+							<div class="row">
+								<label>* SEXO:</label>
+								<input type="text" name="" value="jfkafhdjalfhd" />
+							</div>
+							<div class="row">
+								<label>* FECHA DE NACIMIENTO:</label>
+								<input type="text" name="" value="jfkafhdjalfhd" />
+							</div>
+							<p>* CAMPO OBLIGATORIO</p>
+							<input type="submit" value="ENVIAR" />
+						</fieldset>
+					</form>
+					<div class="clear"></div>
+				</div>
+			</div><!-- #registerWrapper -->
+
+			
+
+
 
 			<div id="container">
 				<!--     ****************     #header   *******************     -->
@@ -259,6 +342,95 @@
 
 
 				</div><!-- #content -->
+
+
+
+				<!--     ****************     #Listas de Rutas en el Home   *******************     -->
+				<div id="routesList">
+					<div class="header">
+						<div class="select">
+							<select>
+								<option>LISTAS DE RUTAS</option>
+								<option>LISTA DE RUTAS 1</option>
+								<option>LISTA DE RUTAS 2</option>
+								<option>LISTA DE RUTAS 3</option>
+								<option>LISTA DE RUTAS 4</option>
+								<option>LISTA DE RUTAS 5</option>
+							</select>
+						</div>
+						<input id="nameList" type="text" name="" value="LISTA DE RUTAS #UNO" placeholder="NOMBRE DE LA LISTA (Ej. Lista de Chiapas)" />
+						<input id="deleteList" type="button" name="" value="Eliminar Lista" /><span class="separator"><!-- separador --></span>
+						<input id="syncList" type="button" name="" value="Sincronizar Lista" />
+						<a id="btnMinRouteList" class="btn btnMinimize" title="Minimizar" href="#">--</a>
+					</div><!-- .header -->
+					
+					<div id="photoRoutesList">
+						<a class="btn btnArrow btnToLeft" title="Anterior" href="#"><span class="hidden">Anterior</span><</a>
+						<a class="btn btnArrow btnToRight" title="Siguiente" href="#"><span class="hidden">Siguiente</span>></a>
+						
+
+						<div class="containerList">
+							<div id="routesBoxContainer">
+								<div class="routeBox">
+									<a class="btn btnDelete" title="Eliminar ruta" href="#">X</a>
+									<ul class="description">
+										<li><h4>Nombre de la ruta</h4></li>
+										<li>Ciudad</li>
+										<li>Actividad: <img alt="Hike" src="statics/img/icons/hike_black.jpg" /></li>
+									</ul>
+									<img class="routeImg" src="statics/img/home/img1.jpg" />
+								</div>
+
+
+								<div class="routeBox">
+									<a class="btn btnDelete" title="Eliminar ruta" href="#">X</a>
+									<ul class="description">
+										<li><h4>Nombre de la ruta</h4></li>
+										<li>Ciudad</li>
+										<li>Actividad: <img alt="Hike" src="statics/img/icons/hike_black.jpg" /></li>
+									</ul>
+									<img class="routeImg" src="statics/img/home/img2.jpg" />
+								</div>
+
+
+								<div class="routeBox">
+									<a class="btn btnDelete" title="Eliminar ruta" href="#">X</a>
+									<ul class="description">
+										<li><h4>Nombre de la ruta</h4></li>
+										<li>Ciudad</li>
+										<li>Actividad: <img alt="Hike" src="statics/img/icons/hike_black.jpg" /></li>
+									</ul>
+									<img class="routeImg" src="statics/img/home/img3.jpg" />
+								</div>
+
+
+								<div class="routeBox">
+									<a class="btn btnDelete" title="Eliminar ruta" href="#">X</a>
+									<ul class="description">
+										<li><h4>Nombre de la ruta</h4></li>
+										<li>Ciudad</li>
+										<li>Actividad: <img alt="Hike" src="statics/img/icons/hike_black.jpg" /></li>
+									</ul>
+									<img class="routeImg" src="statics/img/home/img2.jpg" />
+								</div>
+
+
+								<div class="routeBox">
+									<a class="btn btnDelete" title="Eliminar ruta" href="#">X</a>
+									<ul class="description">
+										<li><h4>Nombre de la ruta</h4></li>
+										<li>Ciudad</li>
+										<li>Actividad: <img alt="Hike" src="statics/img/icons/hike_black.jpg" /></li>
+									</ul>
+									<img class="routeImg" src="statics/img/home/img3.jpg" />
+								</div>
+
+
+								<div class="clear"></div>
+							</div><!-- #routesBoxContainer -->
+						</div><!-- .containerList -->
+					</div><!-- .photosList" -->
+				</div>
 
 
 

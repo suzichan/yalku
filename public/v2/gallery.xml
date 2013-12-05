@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	maxImageWidth="855"
+	maxImageHeight="430"
+	imageQuality="99"
+	thumbWidth="75"
+	thumbHeight="75"
+	thumbQuality="90"
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	title="Yal Ku"
+	useFlash="true"
+	backgroundTransparent="true"
+	thumbPosition="LEFT"
+	thumbColumns="3"
+	thumbRows="3"
+	indexPageName="galeria.html"
+	galleryWidth="1024px"
+	galleryHeight="70%"
+	backgroundColor="000000"
+	frameColor="FFFFFF"
+	textColor="FFFFFF"
+	frameWidth="15"
+	showOpenButton="false"
+	galleryStyle="MODERN"
+
+>
+<image imageURL="statics/img/home/img1.jpg"
+	thumbURL="statics/img/home/thumbs/img1.jpg"
+	linkURL="statics/img/home/img1.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/img2.jpg"
+	thumbURL="statics/img/home/thumbs/img2.jpg"
+	linkURL="statics/img/home/img2.jpg"
+	linkTarget="_self">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/img3.jpg"
+	thumbURL="statics/img/home/thumbs/img3.jpg"
+	linkURL="statics/img/home/img3.jpg"
+	linkTarget="_parent">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/img4.jpg"
+	thumbURL="statics/img/home/thumbs/img4.jpg"
+	linkURL="statics/img/home/img4.jpg"
+	linkTarget="_top">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/img5.jpg"
+	thumbURL="statics/img/home/thumbs/img5.jpg"
+	linkURL="statics/img/home/img5.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/img6.jpg"
+	thumbURL="statics/img/home/thumbs/img6.jpg"
+	linkURL="statics/img/home/img6.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/img7.jpg"
+	thumbURL="statics/img/home/thumbs/img7.jpg"
+	linkURL="statics/img/home/img7.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/img8.jpg"
+	thumbURL="statics/img/home/thumbs/img8.jpg"
+	linkURL="statics/img/home/img8.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/img9.jpg"
+	thumbURL="statics/img/home/thumbs/img9.jpg"
+	linkURL="statics/img/home/img9.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/Ciudad de Mexico_1.jpg"
+	thumbURL="statics/img/home/thumbs/Ciudad de Mexico_1.jpg"
+	linkURL="statics/img/home/Ciudad de Mexico_1.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/edo_de_mx_teotihuacan_2.jpg"
+	thumbURL="statics/img/home/thumbs/edo_de_mx_teotihuacan_2.jpg"
+	linkURL="statics/img/home/edo_de_mx_teotihuacan_2.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/edo_de_mx_teotihuacan_3.jpg"
+	thumbURL="statics/img/home/thumbs/edo_de_mx_teotihuacan_3.jpg"
+	linkURL="statics/img/home/edo_de_mx_teotihuacan_3.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/edo_de_mx_teotihuacan.jpg"
+	thumbURL="statics/img/home/thumbs/edo_de_mx_teotihuacan.jpg"
+	linkURL="statics/img/home/edo_de_mx_teotihuacan.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/edo_de_mx_Tepotzotlan_2.jpg"
+	thumbURL="statics/img/home/thumbs/edo_de_mx_Tepotzotlan_2.jpg"
+	linkURL="statics/img/home/edo_de_mx_Tepotzotlan_2.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/edo_de_mx_Tepotzotlan_3.jpg"
+	thumbURL="statics/img/home/thumbs/edo_de_mx_Tepotzotlan_3.jpg"
+	linkURL="statics/img/home/edo_de_mx_Tepotzotlan_3.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/edo_de_mx_Tepotzotlan_4.jpg"
+	thumbURL="statics/img/home/thumbs/edo_de_mx_Tepotzotlan_4.jpg"
+	linkURL="statics/img/home/edo_de_mx_Tepotzotlan_4.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/edo_de_mx_Tepotzotlan_Arcos del Sitio_1.jpg"
+	thumbURL="statics/img/home/thumbs/edo_de_mx_Tepotzotlan_Arcos del Sitio_1.jpg"
+	linkURL="statics/img/home/edo_de_mx_Tepotzotlan_Arcos del Sitio_1.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+  <image imageURL="statics/img/home/edo_de_mx_tepotzotlan_Arcos del Sitio.jpg"
+	thumbURL="statics/img/home/thumbs/edo_de_mx_tepotzotlan_Arcos del Sitio.jpg"
+	linkURL="statics/img/home/edo_de_mx_tepotzotlan_Arcos del Sitio.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[Lugar: Cozumel.<br />Actividades: Caminata, Rapel.<br />Calificación: 9.5.<br />Nivel de aventura: 1,2 y 3.]]></caption>
+  </image>
+</simpleviewergallery>

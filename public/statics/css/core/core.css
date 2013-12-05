@@ -5,108 +5,17 @@
  * (en) central stylesheet
  * 
  * @creator Susana Aguirre
+ * @project YalKu Mexico
  * @file styles.css
  * @05/SEP/2013
- * 
  */
- 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body, html {
-	line-height: 1;
-	width: 100%;
-	height: 100%;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*************************************
- * @general stuffs
-*************************************/
-.hidden { position:absolute; left: -999em; /*LTR*/ top: -999em; }
-.clear { clear: both; }
-.btn { display: block; }
-strong, b, em { font-weight:bold; }
-a, select, input, textarea, .btn { outline: none; }
-a { text-decoration: none; color: #d3d3d3; }
-sup { font-size: 8px; vertical-align: super; }
-.underlined { text-decoration: underline; }
-
-
-/*  ------------------  botones  ------------------- */
-.btn { display: block; }
-.btnGreen { padding: 9px 68px; }
-.btnSeeMore, .btnSeeMore img { width: 25px; height: 25px; }
-
-
-/*  ------------------  menus  ------------------- */
-.menuHorizontal { width: auto; }
-.menuHorizontal li, .menuHorizontal li a { display: block; }
-.menuHorizontal li { float: left; }
-
-.separator { display: block; float: left; width: 1px; height: 100%; }
-
-#header .menuHorizontal li a:hover, #header .menuLogin a:hover { color: #7bd24b; }
-
-/*  ------------------  listas  ------------------- */
-
-
-/*  ------------------  formularios  ------------------- */
-
-
-
 /*************************************
  * @web style
 *************************************/
 body { color: #fff; font-family: Verdana, Geneva, sans-serif; font-size: 100%; font-style: normal; font-weight: normal; background:#000; }
 #wrapper { /*min-height: 1312px;*/position: relative; margin: 0 auto; padding-bottom: 46px; }
-#wrapper, #footer, #searchWrapper { width: 1024px; /*width: 1280px;*/ }
-#container { position: relative; z-index: 1; }
-
-
-/*  ------------------  Seccion de busqueda  ------------------- */
-#searchWrapper { display: none; position: absolute; height: 100%; z-index: 5; background: rgba(0,0,0,.8);/**/ color: #fff; font-family: Verdana, Arial, sans-serif; font-size: 24px; font-weight: bold; padding-top: 1px; }
-#searchWrapper form { display: block; width: 630px; margin: 300px auto 0; }
-#searchWrapper label { display: block; margin-bottom: 80px; }
-#searchWrapper input { -webkit-appearance: textfield; }
-#searchWrapper input[type=text] { background: none; border:none; font-size: 30px; color: #fff; width: 555px; height: 67px; line-height: 67px; }
-#searchWrapper input[type=submit] { display: block; float: right; background: url(../../img/lupa-verde.png) no-repeat top center; width: 42px; height: 67px; margin-top: 0px; border: none; }
+#wrapper, #footer, #searchWrapper, #routesList { width: 1024px; /*width: 1280px;*/ }
+#container { position: relative; }
 
 
 /*  ------------------  header  ------------------- */
@@ -130,7 +39,7 @@ body { color: #fff; font-family: Verdana, Geneva, sans-serif; font-size: 100%; f
 	#header .menuSearch input { float: right; margin-top: 5px; width: 220px; height: 25px; padding: 0 10px; background-color: #ffffff; border: 1px solid #919191; color: #747474; }
 	
 	#header .menuLogin li, #header .menuLogin li a { font-size: 13px; height: 35px; line-height: 35px; }
-	#header .menuLogin .separator { background-color: #a1c637; margin: 0 10px; }
+	#header .menuLogin .separator, #routesList .header .separator { background-color: #a1c637; margin: 0 10px; }
 
 	/* para el efecto subrayado */
 	/*#header .menuLogin li { padding-top: 2px; }
@@ -150,118 +59,15 @@ body { color: #fff; font-family: Verdana, Geneva, sans-serif; font-size: 100%; f
 	#header .menuSocial { float: right; margin-top: 17px; }
 	#header .menuSocial li { margin-left: 5px; float: right; }
 
+
 /*  ------------------  contenido  ------------------- */
 #galleryContent { position: relative; }
 	#closeGallery { display: block; position: absolute; top: 13px; right: 64px; width: 29px; height: 29px; color: green; font-weight: bold; background: url("../../img/btn_cerrar_galeria.png") no-repeat top center; }
 	#sv-container { margin: 0 auto; }
 
 
-	/*  ------------------  HOME  ------------------- */
-	.mediaBoxContainer { position: relative; color: #fafaff; /*background: rgba(170,255,60,.2);*/ }
-	.box { float: left; overflow: hidden; position: relative; }
-
-	.mediaBox { width: 340px; height: 345px; margin-left: 1px; margin-bottom: 1px; }
-
-	.box .mediaInfoBox { position: absolute; background: rgba(0,0,0,.7); bottom: -153px; left: 0; height: 153px; width: 100%; }
-		.mediaInfoBox .btn { position: absolute; top: 112px; right: 8px;  }
-		.mediaInfoBox h3, .mediaInfoBox ul { position: absolute; }
-		.mediaInfoBox h3 { top: 0; left: 0; display: block; width: 38%; margin-top: 0; padding-top: 25px; padding-left: 4.5%; padding-right: 2%; 
-			font-family: 'HelveticaNeueBoldCondensed','YanoneRegular',Helvetica,sans-serif; font-size: 20px; line-height: 26px; text-transform: uppercase; }
-		.mediaInfoBox ul { top: 0; right: 0; padding-top: 23px; display: block; width: 56%; font-size: 13px; }
-			.mediaInfoBox li { font-family: 'LatoHairline',Helvetica,sans-serif; font-size: 14px; line-height: 15px; padding: 4px 0; }
-			.mediaInfoBox li span { font-family: 'LatoRegular','YanoneLight',Helvetica,sans-serif; font-size: 12px; }
-	
-	.box .mediaItemBox, .box .mediaItemBox .imageItemBox, .box .mediaItemBox iframe, .box .mediaItemBox img { width: 100%; height: 100%; }
-		.imageItemBox { overflow: hidden; position: relative; }
-		.box .imageItemBox img { display: block; position: absolute; top: 0; left: -50%; width: auto; }
-
-
-	/*  ------------------  DETAIL  ------------------- */
-	#detailContent { background: #ffffff; color: #000; }
-	#headDetail, #headDetail .map, #headDetail iframe { height: 255px; }
-		#headDetail img, #headDetail .halfSize, #headDetail .map { display: block; float: left; }
-		#headDetail img, #headDetail .halfSize { height: 100%; margin-right: 1px; }
-			#headDetail .halfSize { position: relative; width: 255px; overflow: hidden; background: yellow; }
-			#headDetail .halfSize img { position: absolute; width: auto; left: -50%; }
-		#headDetail img.normal { width: 510px; }
-		#headDetail .map, #headDetail iframe { width: 255px; }
-		#headDetail .map { position: relative; }
-		#headDetail .map small { position: absolute; bottom: 0; right: 0; padding: 2px 5px; background: #000; font-size: 50%; }
-		#headDetail .map small a { color: #7bd24b !important; }
-
-	#detailContent .left, #detailContent .right { float: left; padding-bottom: 30px; }
-		#detailContent .left { width: 674px; }
-			#detailContent .infoDataSection { padding: 0 47px 0 30px; }
-			#detailContent .placeData { position: relative; margin-top: 35px; }
-				#filtersList { display: block; height: 58px; padding-left: 77px; }
-				#filtersList li, #filtersList li a { display: block; width: 58px; height: 58px; }
-				#filtersList li { float: left; margin: 0 10px; }
-				#filtersList li a { background: url("../../img/grid-filters.jpg") no-repeat 0 0; }
-					#filtersList .location { background-position: 0px 0px; }
-					#filtersList .location:hover, #filtersList .location.selected { background-position: 0px -58px; }
-					#filtersList .hike { background-position: -58px 0px; }
-					#filtersList .hike:hover, #filtersList .hike.selected { background-position: -58px -58px; }
-					#filtersList .bike { background-position: -116px 0px; }
-					#filtersList .bike:hover, #filtersList .bike.selected { background-position: -116px -58px; }
-					#filtersList .water { background-position: -174px 0px; }
-					#filtersList .water:hover, #filtersList .water.selected { background-position: -174px -58px; }
-					#filtersList .air { background-position: -232px 0px; }
-					#filtersList .air:hover, #filtersList .air.selected { background-position: -232px -58px; }
-					#filtersList .atv { background-position: -290px 0px; }
-					#filtersList .atv:hover, #filtersList .atv.selected { background-position: -290px -58px; }
-				
-				.infoDataSection .dataList { margin-top: 55px; }	
-					 .dataList li span, .infoDataSection h3, .relatedActivities h3 { font-family: Verdana; font-weight: bold; font-size: 14px; }
-					 .dataList li { margin: 8px 0; font-family: Verdana; font-size: 14px; }
-				.infoDataSection h3 { margin-top: 30px; }
-				.infoDataSection h4 { margin-top: 25px; font-size: 14px; }
-				.infoDataSection p { margin: 8px 0 27px; font-size: 14px; line-height: 22px; }
-
-				.infoDataSection .footBtns, .left .horizontalSeparator { width: 625px; }
-
-	.btnGallery { display: inline-block; width: 35px; height: 36px; background: url("../../img/btn_galeria.jpg") no-repeat 0 0; }
-	.btnAddPlace { display: inline-block; width: 35px; height: 36px; background: url("../../img/btn_agregar_lugar.jpg") no-repeat 0 0; }
-	.btnAddTip { display: block; float: right; width: 151px; height: 33px; background: url("../../img/btn_agregar_sugerencia.jpg") no-repeat 0 0; }
-	.opinionsData .btn { width: auto; float: right; padding-right: 15px; background: url("../../img/btn_ver_mas_tips.jpg") no-repeat right; color: #000; font-size: 14px; font-weight: bold; }
-	.horizontalSeparator { height: 1px; background-color: #b2b2b2; }
-		.left .horizontalSeparator { margin: 30px 0 10px 30px; }
-
-
-
-		#detailContent .right { width: 350px; }
-			.tipsContainer, #carouselTips, #carouselTips .tipsListContainer { width: 215px; }
-
-			.tipsContainer { /*w:270px;h:395px;*/ padding: 40px 25px 20px 30px; 
-				height: 335px; margin: 65px auto;
-				color: #fff; font-size: 12px; line-height: 20px;
-				background: #000000; -webkit-box-shadow:  0px 0px 20px 4px #444; box-shadow:  0px 0px 20px 4px #444; }
-
-			h4 { color: #36ae40; font-weight: bold; }
-			.tipsContainer p { margin: 10px 0 25px; padding-right: 5px; font-size: 13px; line-height: 22px; font-family: Verdana; }
-
-			#carouselTips { height: 305px; overflow: hidden; }
-			#carouselTips .tipsListContainer ul li { margin-right: 30px; }
-			#carouselTips .tipsListContainer ul li span { display: block; width:215px; height:265px; overflow-y: auto; }
-
-			.carouselBtns { margin: 15 auto 0; width: 100px; height: 12px; background: black }
-			.carouselBtns button { display: block; float: left; width: 16px; height: 12px; margin: 0 2px; padding: 0; 
-				border: none; background: #000000 url("../../img/punto_verde_gris.jpg") no-repeat 2px 0px; }
-			.carouselBtns button.selected { background-position: -10px 0px; }
-			.carouselBtns button:hover { cursor: pointer; }
-
-			.textBox { width: 200px; margin: 0 auto; font-weight: bold; font-family: Verdana; font-size: 13px; line-height: 26px; }
-
-.relatedActivities { padding-left: 30px; }
-	.activityBlock { width: 470px; /*min-height: 190px;*/ float: left; margin: 20px 20px 20px 0px; overflow: hidden; }
-		.activityBlock, .activityBlock .imageContainer, .activityBlock .imageContainer img { height: 146px; }
-		.activityBlock .imageContainer { display: block; float: left; position: relative; width: 211px; overflow: hidden; }
-		.activityBlock .imageContainer img { position: absolute; top: 0; left: -18%; width: auto; }
-		.activityBlock .dataList, .activityBlock .activitiesIcons { float: right; width: 245px; }
-			.activitiesIcons img { width: 41px; height: 41px; margin: 3px; display: block; float: left; }
-		
-
 /*  ------------------  footer  ------------------- */
-#footer { position: fixed; bottom: 0; height: 46px; background: #1f1f1f url(../img/bg_footer.jpg) repeat top; z-index: 5; }
+#footer { position: fixed; bottom: 0; height: 46px; background: #1f1f1f url(../../img/bg_footer.jpg) repeat top; z-index: 5; }
 #footer a, #footer p { color: #626262; margin-top: 23px; font-size: 12px; font-weight: bold; }
 #footer p { width: auto; float: right; margin-right: 145px; }
 #footer a { display: block; width: auto; float: left; margin-left: 155px; }
@@ -277,16 +83,4 @@ body { color: #fff; font-family: Verdana, Geneva, sans-serif; font-size: 100%; f
 ::-webkit-scrollbar-corner { background-color: white; }
 ::-webkit-resizer { background-color: #red;}
 
-
-/*  ------------------  fix para mozilla en el show/hide de la informaci'on de un video en el home  ------------------  */
-	@-moz-document url-prefix(http://),url-prefix(https://) { 
-	  .videoItemBox .mediaItemBox {/*w:425px; h:432px;*/
-	     width: 336px;
-	     height: 341px;
-	     margin: 2px auto;/**/
-	  }
-
-	/*  ------------------  estilos para la scrollbar en firefox  ------------------- */
-	
-}/* terminan fixes para mozilla */
 

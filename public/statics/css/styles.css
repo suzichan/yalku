@@ -5,14 +5,20 @@
 * (en) Central Stylesheet
 *
 * @creator Susana Aguirre
-* @proyect YalKu Mexico
+* @project YalKu Mexico
 * @file styles.css
 * @05/09/2013
 *
 */
+/* General CSS */
+@import url(core/general.css);
 /* Fonts CSS */
 @import url(core/fonts.css);
-/* Efectos CSS */
-@import url(core/fx.css);
+/* Modal Window CSS */
+@import url(core/modalWindow.css);
 /* Core CSS */
 @import url(core/core.css);
+/* Efectos CSS */
+@import url(core/fx.css);
+/* Fix CSS */
+@import url(core/fix.css);

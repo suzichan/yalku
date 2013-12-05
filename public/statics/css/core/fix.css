@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+* (es) Estilos para componer diferencias de estilos entre navegadores
+* (en) CSS Fix Stylesheet
+*
+* @creator Susana Aguirre
+* @project YalKu Mexico
+* @file fix.css
+* @02/DIC/2013
+*/
+/*  ------------------  fix para mozilla en el show/hide de la informaci'on de un video en el home  ------------------  */
+@-moz-document url-prefix(http://),url-prefix(https://) { 
+  .videoItemBox .mediaItemBox {/*w:425px; h:432px;*/
+     width: 336px;
+     height: 341px;
+     margin: 2px auto;/**/
+  }
+  #routesList .header .select { padding-right: 5px; }	
+}/* terminan fixes para mozilla */
+

@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+* (es) Estilos Principales
+* (en) Central Stylesheet
+*
+* @creator Susana Aguirre
+* @proyect YalKu Mexico
+* @file styles.css
+* @05/09/2013
+*
+*/
+/* Fonts CSS */
+@import url(core/fonts.css);
+/* Efectos CSS */
+@import url(core/fx.css);
+/* Core CSS */
+@import url(core/core.css);

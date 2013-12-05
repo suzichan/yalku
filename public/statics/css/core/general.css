@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+ * (es) Estilos para unificar entre navegadores
+ * (en) reset stylesheet
+ * 
+ * @creator Susana Aguirre
+ * @project YalKu Mexico
+ * @file styles.css
+ * @02/DIC//2013
+ * 
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body, html {
+	line-height: 1;
+	width: 100%;
+	height: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************************************
+ * @general stuffs
+*************************************/
+* { outline: none !important; }
+.hidden { position:absolute; left: -999em; /*LTR*/ top: -999em; }
+.clear { clear: both; }
+.btn { display: block; }
+strong, b, em { font-weight:bold; }
+a { text-decoration: none; color: #d3d3d3; }
+sup { font-size: 8px; vertical-align: super; }
+.underlined { text-decoration: underline; }
+a, select, button, input[type="button"] { cursor: pointer; }
+
+
+/*  ------------------  botones  ------------------- */
+.btn { display: block; }
+.btnGreen { padding: 9px 68px; }
+.btnSeeMore, .btnSeeMore img { width: 25px; height: 25px; }
+
+
+/*  ------------------  menus  ------------------- */
+.menuHorizontal { width: auto; }
+.menuHorizontal li, .menuHorizontal li a { display: block; }
+.menuHorizontal li { float: left; }
+
+.separator { display: block; float: left; width: 1px; height: 100%; }
+
+#header .menuHorizontal li a:hover, #header .menuLogin a:hover { color: #7bd24b; }
+
+/*  ------------------  listas  ------------------- */
+
+
+/*  ------------------  formularios  ------------------- */
+
+
+

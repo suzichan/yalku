@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+ * (es) Estilos para la p'agina de inicio
+ * (en) home stylesheet
+ * 
+ * @creator Susana Aguirre
+ * @project YalKu Mexico
+ * @file home.css
+ * @05/SEP/2013
+ */
+/*  ------------------  HOME  ------------------- */
+.mediaBoxContainer { position: relative; color: #fafaff; /*background: rgba(170,255,60,.2);*/ }
+.box { float: left; overflow: hidden; position: relative; }
+
+.mediaBox { width: 340px; height: 345px; margin-left: 1px; margin-bottom: 1px; }
+
+.box .mediaInfoBox { position: absolute; background: rgba(0,0,0,.7); bottom: -153px; left: 0; height: 153px; width: 100%; }
+	.mediaInfoBox .btn { position: absolute; top: 112px; right: 8px;  }
+	.mediaInfoBox h3, .mediaInfoBox ul { position: absolute; }
+	.mediaInfoBox h3 { top: 0; left: 0; display: block; width: 38%; margin-top: 0; padding-top: 25px; padding-left: 4.5%; padding-right: 2%; 
+		font-family: 'HelveticaNeueBoldCondensed','YanoneRegular',Helvetica,sans-serif; font-size: 20px; line-height: 26px; text-transform: uppercase; }
+	.mediaInfoBox ul { top: 0; right: 0; padding-top: 23px; display: block; width: 56%; font-size: 13px; }
+		.mediaInfoBox li { font-family: 'LatoHairline',Helvetica,sans-serif; font-size: 14px; line-height: 15px; padding: 4px 0; }
+		.mediaInfoBox li span { font-family: 'LatoRegular','YanoneLight',Helvetica,sans-serif; font-size: 12px; }
+
+.box .mediaItemBox, .box .mediaItemBox .imageItemBox, .box .mediaItemBox iframe, .box .mediaItemBox img { width: 100%; height: 100%; }
+	.imageItemBox { overflow: hidden; position: relative; }
+	.box .imageItemBox img { display: block; position: absolute; top: 0; left: -50%; width: auto; }
+	
+
+
+/*  ------------------  Lista de Rutas en el Home  ------------------- */
+#routesList { height: 165px; }
+	/* cabecera de las listas de rutas */
+	#routesList .header { height: 40px; padding: 0 15px; overflow: hidden; position: relative; }
+		#routesList .header select, #routesList .header .select, #routesList .header input { appearance: none; -webkit-appearance: none; -moz-appearance: none; border: none; height: 20px; line-height: 20px; padding: 0; margin: 10px 0; width: auto; border-radius: 0px; font-family: inherit; font-size: 13px; text-transform: uppercase; color: #a4a4a4; display: block; float: left; background: none; }
+
+		/* select */
+		#routesList .header .select { overflow: hidden; background: url(../../img/bg_select.jpg) no-repeat right; padding-right: 25px; }
+		#routesList .header select { width: 130%; background: none; margin: 0; }
+
+		#routesList .header .separator { height: 24px; margin: 8px 20px; }
+		#routesList #btnMinRouteList { position: absolute; right: 10px; top: 10px; }
+
+			#nameList { width: 350px !important; margin-left: 20px !important; color: #fff !important; }
+			#deleteList { margin-right: 30px !important; }
+			#syncList, #deleteList, #routesList .header .separator { float: right !important; }
+
+	/* cuerpo de las listas de rutas */
+	#photoRoutesList { height: 105px; position: relative; }
+		#routesList .btnArrow { position: absolute; width: 10px; height: 50px; line-height: 50px; top: 27px; background: rgba(255,255,0,.1); }
+		#routesList .btnToLeft { left: 15px; }
+		#routesList .btnToRight { right: 15px; }
+
+		#photoRoutesList .containerList { width: 944; /*1024-80*/ margin: 0 auto; overflow: hidden; }
+			#routesBoxContainer { width: 1100px; /*220x5 (228 ancho del box con sus m'argenes y 5 boxes)*/ }
+				#routesBoxContainer .routeBox, #routesBoxContainer .description, #routesBoxContainer img.routeImg { width: 208px; height: 105px; }
+				#routesBoxContainer .routeBox { position: relative; float: left; margin-right: 12px; background: rgba(255,0,0,.6); }
+					#routesBoxContainer .routeBox .btnDelete { position: relative; top: 5px; right: 5px; width: 20px; height: 20px; background: #005; display: none; }
+				#routesBoxContainer .description { position: absolute; top: 0px; left: 0px; background: rgba(0,0,0,0.8); display: none; }
+
+
