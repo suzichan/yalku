@@ -40,5 +40,8 @@
 
 
 /*  ------------------  Registro  ------------------- */
-#registerWrapper form { width: 450px; float: right; background: rgba(0,255,2,.1); }
-	#registerWrapper .row { height: 44px; background: url("../../img/bg_input_register.jpg") no-repeat center top;}
+#registerWrapper form { width: 450px; float: right; background: rgba(0,255,2,.1); font-size: 14px; }
+#registerWrapper .row, #registerWrapper input { height: 44px; }
+	#registerWrapper .row { background: url("../../img/bg_input_register.jpg") no-repeat center top; margin-top: 10px; }
+		#registerWrapper input { appearance: textfield; -moz-appearance: textfield; -webkit-appearance: textfield; background: none; border: none; color: #fff; font-size: inherit; }
+		#registerWrapper input, #registerWrapper label { display: inline-block; text-indent: 15px; }
