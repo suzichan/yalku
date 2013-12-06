@@ -62,12 +62,11 @@ table {
 * { outline: none !important; }
 .hidden { position:absolute; left: -999em; /*LTR*/ top: -999em; }
 .clear { clear: both; }
-.btn { display: block; }
 strong, b, em { font-weight:bold; }
 a { text-decoration: none; color: #d3d3d3; }
 sup { font-size: 8px; vertical-align: super; }
 .underlined { text-decoration: underline; }
-a, select, button, input[type="button"] { cursor: pointer; }
+a, select, button, input[type="button"], input[type="submit"] { cursor: pointer; }
 
 
 /*  ------------------  botones  ------------------- */

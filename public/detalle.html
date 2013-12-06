@@ -14,6 +14,90 @@
 	</head>
 	<body>
 		<div id="wrapper">
+			
+			<div id="loginWrapper" class="connectModalWindow">
+				<div class="container">
+					<a class="btn btnClose" title="Cerrar" href="#"><span class="hidden">X</span></a>
+					<h4>CONÉCTATE UTILIZANDO</h4>
+					<div class="loginSocialBtns">
+						<a class="btn btnFacebook" href="#"><span class="hidden">f Connect</span></a>
+						<a class="btn btnTwitter" href="#"><span class="hidden">t Sign in with Twitter</span></a>
+					</div>
+					<img class="separator" src="statics/img/login_horizontal_separator.jpg" />
+					<div class="clear"></div>
+
+					<form action="">
+						<fieldset>
+							<div class="row">
+								<label>Correo electrónico</label>
+								<input type="text" name="" value="" placeholder="ejemplo@dominio.com" />
+							</div>
+							<div class="row">
+								<label>Contraseña</label>
+								<input type="password" name="" value="" placeholder="jfkafhdjalfhd" />
+							</div>
+							<div class="horizontalSeparator"><!-- separator --></div>
+							<input class="btnSubmit" type="submit" value="CREAR CUENTA" />
+						</fieldset>
+					</form>
+				</div>
+			</div><!-- #loginWrapper -->
+
+
+			<div id="registerWrapper" class="connectModalWindow">
+				<div class="container">
+					<a class="btn btnClose" title="Cerrar" href="#"><span class="hidden">X</span></a>
+					<h4>CONÉCTATE UTILIZANDO</h4>
+					<div class="loginSocialBtns">
+						<a class="btn btnFacebook" href="#"><span class="hidden">f Connect</span></a>
+						<a class="btn btnTwitter" href="#"><span class="hidden">t Sign in with Twitter</span></a>
+					</div>
+					<img class="separator" src="statics/img/login_horizontal_separator.jpg" />
+					<div class="clear"></div>
+
+					<h4 class="second">UTILIZANDO TU EMAIL<span></span></h4>
+					<form action="">
+						<fieldset>
+							<div class="row">
+								<label>* NOMBRE COMPLETO:</label>
+								<input type="text" name="" value="" placeholder="" />
+							</div>
+							<div class="row">
+								<label>* USUARIO:</label>
+								<input type="text" name="" value="" placeholder="" />
+							</div>
+							<div class="row">
+								<label>* CONTRASEÑA:</label>
+								<input type="password" name="" value="" placeholder="*********" />
+							</div>
+							<div class="row">
+								<label>* CORREO ELECTRÓNICO:</label>
+								<input type="text" name="" value="" placeholder="ejemplo@dominio.com" />
+							</div>
+							<div class="row">
+								<label>&nbsp;&nbsp;CIUDAD:</label>
+								<input type="text" name="" value="" placeholder="" />
+							</div>
+							<div class="row">
+								<label>* SEXO:</label>
+								<input type="text" name="" value="" placeholder="" />
+							</div>
+							<div class="row">
+								<label>* FECHA DE NACIMIENTO:</label>
+								<input type="text" name="" value="" placeholder="DD/MM/AAAA" />
+							</div>
+							<p>* CAMPO OBLIGATORIO</p>
+							<input class="btnSubmit" type="submit" value="ENVIAR" />
+						</fieldset>
+					</form>
+					<div class="clear"></div>
+				</div>
+			</div><!-- #registerWrapper -->
+
+			
+
+
+
 			<div id="container">
 				<!--     ****************     #header   *******************     -->
 				<div id="header">
@@ -27,8 +111,8 @@
 							<input type="text" placeholder="Escribe un lugar, actividad o deporte" />
 						</div>
 						<ul class="menuLogin menuHorizontal">
-							<li class="cl-effect-5"><a title="REGISTRO" href="#"><span data-hover="REGISTRO">REGISTRO</span></a></li><span class="separator"><!-- separador --></span>
-							<li class="cl-effect-5"><a title="LOGIN" href="#"><span data-hover="LOGIN">LOGIN</span></a></li>
+							<li class="cl-effect-5"><a id="linkRegister" title="REGISTRO" href="#"><span data-hover="REGISTRO">REGISTRO</span></a></li><span class="separator"><!-- separador --></span>
+							<li class="cl-effect-5"><a id="linkLogin" title="LOGIN" href="#"><span data-hover="LOGIN">LOGIN</span></a></li>
 						</ul>
 						<div class="menuApps displayLogos hidden">
 							<a class="logoStore" title="YALKU en App Store" href="#"><img src="statics/img/logo_apple.jpg" /></a>
@@ -41,8 +125,7 @@
 					<div class="bottomContainer container">
 						<ul class="menuMain menuHorizontal">
 							<li><a title="EXPLORAR" href="#" data-hover="EXPLORAR">EXPLORAR</a></li><span class="separator"><!-- separador --></span>
-							<li><a title="PLANEAR" href="#" data-hover="PLANEAR">PLANEAR</a></li><span class="separator"><!-- separador --></span>
-							<li><a title="FOROS" href="#" data-hover="FOROS">FOROS</a></li><span class="separator"><!-- separador --></span>
+							<li><a title="BLOG" href="#" data-hover="PLANEAR">BLOG</a></li><span class="separator"><!-- separador --></span>
 							<li><a title="CONOCE MÁS" href="#" data-hover="CONOCE MÁS">CONOCE MÁS</a></li>
 						</ul>
 						<ul class="menuSocial menuHorizontal">
@@ -68,15 +151,16 @@
 							<div class="map">
 								<iframe width="427" height="430" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.mx/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=puerto+vallarta&amp;aq=&amp;sll=19.320099,-99.152184&amp;sspn=1.426806,1.270294&amp;ie=UTF8&amp;hq=&amp;hnear=Puerto+Vallarta,+Jalisco&amp;t=m&amp;z=13&amp;ll=20.615845,-105.230256&amp;output=embed"></iframe>
 								<small>
-									<a href="https://maps.google.com.mx/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=puerto+vallarta&amp;aq=&amp;sll=19.320099,-99.152184&amp;sspn=1.426806,1.270294&amp;ie=UTF8&amp;hq=&amp;hnear=Puerto+Vallarta,+Jalisco&amp;t=m&amp;z=13&amp;ll=20.615845,-105.230256" style="color:#0000FF;text-align:left">Ver mapa más grande</a>
+									<a href="https://maps.google.com.mx/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=puerto+vallarta&amp;aq=&amp;sll=19.320099,-99.152184&amp;sspn=1.426806,1.270294&amp;ie=UTF8&amp;hq=&amp;hnear=Puerto+Vallarta,+Jalisco&amp;t=m&amp;z=13&amp;ll=20.615845,-105.230256" style="color:#0000FF;text-align:left" target="_blank">Ver mapa más grande</a>
 								</small>
-							</div>
+							</div><!-- .map -->
 							<div class="clear"><!-- clear --></div>
 						</div><!-- #headDetail -->
 
 						<div class="bodyDetail">
 							<div class="left">
-								<div class="placeData infoDataSection">
+								<p class="place">Lugar: <strong>Zacatlan de las Manzanas</strong><span></span></p>
+								<h3>Actividades Disponibles</h3>
 									<ul id="filtersList">
 										<li><a class="location selected" href=""><img class="hidden" src="statics/img/icons/location_black.jpg" /></a></li>
 										<li><a class="hike" href=""><img class="hidden" src="statics/img/icons/hike_black.jpg" /></a></li>
@@ -86,100 +170,75 @@
 										<li><a class="atv" href=""><img class="hidden" src="statics/img/icons/atv_black.jpg" /></a></li>
 									</ul>
 
-									<ul class="dataList">
-										<li><span>Lugar:&nbsp;</span> Cozumel</li>
-										<li><span>Actividad:</span> Caminata, Rapel</li>
-										<li><span>Calificaci&oacute;n:</span> 9.5</li>
-										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+									<ul class="routesList">
+										<li>Bici de Montaña</li>
+										<li>Bici de Montaña 1 (Nivel 1 = F&aacute;cil)</li>
+										<li class="selected">Bici de Montaña 2 (Nivel 3 = Extrema)</li>
+										<li>Bici de Ruta (Nivel 2 = Moderado)</li>
+										<li>Bici de Ruta 3</li>
+										<li>Bici de Ruta 4</li>
+										<li>Bici de Ruta 5 (Nivel 2 = Moderado)</li>
+										<li>Bici de Ruta 6 (Nivel 2 = Moderado)</li>
 									</ul>
-
-									<h3>Descripción</h3>
-
-									<p>Vestibulum ac sapien a diam facilisis fringilla. Curabitur luctus sollicitudin tellus id sagittis. Duis erat quam, sollicitudin nec tellus adipiscing, condimentum laoreet metus. Etiam quis magna risus. Suspendisse potenti. Phasellus quis odio vitae diam hendrerit viverra sit amet sit amet est. In hac habitasse platea dictumst.</p>
-
-									<p>Morbi suscipit dui vitae mi scelerisque dapibus. Proin iaculis at risus et sagittis. Proin in nisi et dui pellentesque laoreet. Suspendisse potenti. Integer a eleifend ligula. Aenean et tempus sem. Ut in interdum augue. Nam dapibus adipiscing sem, a convallis purus. Pellentesque aliquam consequat porttitor. Mauris in sollicitudin est. Ut porta nibh ut porta molestie. Nulla feugiat luctus nulla vel fermentum.</p>
-
-									<div class="footBtns">
-										<a class="btnGallery btn" title="Galería" href="galeria.html"><span class="hidden">Galería</span></a>
-										<a class="btnAddPlace btn" title="Agregar a mis listas" href="#"><span class="hidden">Agregar</span></a>
-										<a class="btnAddTip btn" title="Agregar Sugerencia" href="#"><span class="hidden">Agregar Sugerencia</span></a>
-									</div>
-								</div><!-- .placeData -->
-
-								<div class="horizontalSeparator"><!-- Separador horizontal auxiliar --></div>
-
-								<div class="opinionsData infoDataSection">
-									<h3>Opiniones y tips:</h3>
-
-									<h4>Nombre y fecha</h4>
-
-									<p>Ut vitae arcu id felis bibendum blandit sollicitudin sed nisi. Vestibulum non consectetur enim. Sed enim purus, faucibus et rhoncus convallis, mattis ut urna. Integer quam ligula, lacinia eget arcu et, molestie ullamcorper arcu. Curabitur vitae rutrum leo. Aliquam commodo congue urna vel sollicitudin. Nullam in tempor felis. Maecenas ornare tempor turpis id accumsan.</p>
-
-									<h4>Nombre y fecha</h4>
-
-									<p>Ut vitae arcu id felis bibendum blandit sollicitudin sed nisi. Vestibulum non consectetur enim. Sed enim purus, faucibus et rhoncus convallis, mattis ut urna. Integer quam ligula, lacinia eget arcu et, molestie ullamcorper arcu. Curabitur vitae rutrum leo. Aliquam commodo congue urna vel sollicitudin. Nullam in tempor felis. Maecenas ornare tempor turpis id accumsan.</p>
-
-									<h4>Nombre y fecha</h4>
-
-									<p>Ut vitae arcu id felis bibendum blandit sollicitudin sed nisi. Vestibulum non consectetur enim. Sed enim purus, faucibus et rhoncus convallis, mattis ut urna. Integer quam ligula, lacinia eget arcu et, molestie ullamcorper arcu. Curabitur vitae rutrum leo. Aliquam commodo congue urna vel sollicitudin. Nullam in tempor felis. Maecenas ornare tempor turpis id accumsan.</p>
-
-									<a class="btn" title="Ver más" href="">Ver más.</a>
-									<div class="clear"></div>
-								</div><!-- .opinionsData -->
-
-								<div class="horizontalSeparator"><!-- Separador horizontal auxiliar --></div>
-
-
 							</div><!-- .left -->
 
 							<div class="right">
-								<div class="tipsContainer">
-									
-									<h4>Tips:</h4>
+								<p class="difficulty">EXTREMO</p>
+								<h3>Bici de Montaña 2 (Nivel 3 = Extrema)</h3>
+								<p class="intro">Morbi suscipit dui vitae mi scelerisque dapibus. Proin iaculis at risus et sagittis. Proin in nisi et dui pellentesque laoreet. Suspendisse potenti. Integer a eleifend ligula. Aenean et tempus sem. Ut in interdum augue. Nam dapibus adipiscing sem, a convallis purus. Pellentesque aliquam consequat porttitor. Mauris in sollicitudin est. Ut porta nibh ut porta molestie. Nulla feugiat luctus nulla vel fermentum.</p>
 
-									<div id="carouselTips" class="carousel auto imageSliderExt">
-									    <div class="jCarouselLite tipsListContainer">
-									        <ul>
-									            <li><span>
-									            	<p>1 fjdklsa hfdlsa fgdshjaf dsahf jdkslafndk s afjkds akfjhd sjalfh dsa hfjdsa hfldfsafdsaf fdsa  fds.</p>
-									            	<p>1 fjdklsa hfdlsa fgdshjaf dsahf jdkslafndk s afjkds akfjhd.</p>
-									            	<p>1 fjdklsa hfdlsa fgdshjaf dsahf jdkslafndk s.</p>
-									            </span></li>
-									            <li><span>
-									            	<p>2 fjdklsa hfdlsa fgdshjaf dsahf jdkslafndk s afjkds akfjhd.</p>
-									            	<p>2 fjdklsa hfdlsa fgdshjaf dsahf jdkslafndk s afjkds akfjhd sjalfh dsa hfjdsa hfld aifhdsjakfh djsl fdsa fjkdslafnjlh j</p>
-									            </span></li>
-									            <li><span>
-									            	<p>3 fjdklsa hfdlsa fgdshjaf dsahf jdkslafndk s afjkds akfjhd sjalfh dsa hfjdsa hfld aifhdsjakfh djsl fdsa fjkdslafnjlh fjsak;d f djsafdsa fdsafkdas f kdaf das fdhas fd safhdhfklahfuihasakfjafdjafb  fhdsajklf hdshf d kfdl sahfdf a dhjkfhk j</p>
-									            </span></li>
-									            <li><span>
-									            	<p>4 fjdklsa hfdlsa fgdshjaf dsahf jdkslafndk s afjkds akfjhd sjalfh dsa hfjdsa hfld aifhdsjakfh djsl fdsa fjkdslafnjlh j</p>
-									            	<p>4 fjdklsa hfdlsa fgdshjaf dsahf jdkslafndk s.</p>
-									            </span></li>
-									            <li><span>
-									            	<p>5 fjdklsa hfdlsa fgdshjaf dsahf jdkslafndk s afjkds akfjhd sjalfh dsa hfjdsa hfld aifhdsjakfh.</p>
-									            	<p>5 fjdklsa hfdlsa fgdshjaf dsahf jdkslafndk s afjkds. djsl fdsa fjkdslafnjlh j.</p>
-									            </span></li>
-									        </ul>
-									    </div><!-- .jCarouselLite -->
-									    <div class="clear"></div>  
+								<div class="map">
+									<iframe width="480" height="280" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.mx/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=puerto+vallarta&amp;aq=&amp;sll=19.320099,-99.152184&amp;sspn=1.426806,1.270294&amp;ie=UTF8&amp;hq=&amp;hnear=Puerto+Vallarta,+Jalisco&amp;t=m&amp;z=13&amp;ll=20.615845,-105.230256&amp;output=embed"></iframe>
+									<small>
+										<a href="https://maps.google.com.mx/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=puerto+vallarta&amp;aq=&amp;sll=19.320099,-99.152184&amp;sspn=1.426806,1.270294&amp;ie=UTF8&amp;hq=&amp;hnear=Puerto+Vallarta,+Jalisco&amp;t=m&amp;z=13&amp;ll=20.615845,-105.230256" style="color:#0000FF;text-align:left" target="_blank">Ver mapa más grande</a>
+									</small>
+								</div>
 
-									    <div class="carouselBtns">
-									        <button class="1 selected"><span class="hidden">1</span></button>
-									        <button class="2"><span class="hidden">2</span></button>
-									        <button class="3"><span class="hidden">3</span></button>
-									        <button class="4"><span class="hidden">4</span></button>
-									        <button class="5 0"><span class="hidden">5</span></button>
-									        <div class="clear"></div>
-									    </div> 
-									</div><!-- .carouselTips -->  
-								</div><!-- .tipsContainer -->
+								<a class="btn btnAddToList" title="Agregar a lista" href="#">Agregar a lista.</a>
+								<a class="btn btnShareRoute" title="Compartir ruta" href="#">Compartir ruta.</a>
+								<a class="btn btnGallery" title="Galería" href="galeria.html"><span class="hidden">Ver Galería</span></a>
 							</div><!-- .right -->
+
+
+							<div id="opinionsSection">
+								<h3>Comentarios, tips y sugerencias:</h3>
+
+								<div class="commentBox">
+									<div class="likeBtns">
+										<a class="countLike" title="Me gusta" href="#">21</a>
+										<a class="countDislike" title="No me gusta" href="#">3</a>
+									</div>
+									<img src="statics/img/avatarUser.jpg" />
+									<p class="comment">Ut vitae arcu id felis bibendum blandit sollicitudin sed nisi. Vestibulum non consectetur enim. Sed enim purus, faucibus et rhoncus convallis, mattis ut urna. Integer quam ligula, lacinia eget arcu et, molestie ullamcorper arcu. Curabitur vitae rutrum leo.</p>
+								</div>
+
+								<div class="commentBox">
+									<div class="likeBtns">
+										<a class="countLike" title="Me gusta" href="#">21</a>
+										<a class="countDislike" title="No me gusta" href="#">3</a>
+									</div>
+									<img src="statics/img/avatarUser.jpg" />
+									<p class="comment">Ut vitae arcu id felis bibendum blandit sollicitudin sed nisi. Vestibulum non consectetur enim. Sed enim purus, faucibus et rhoncus convallis, mattis ut urna. Integer quam ligula, lacinia eget arcu et, molestie ullamcorper arcu. Curabitur vitae rutrum leo. Aliquam commodo congue urna vel sollicitudin. Nullam in tempor felis. Maecenas ornare tempor turpis id accumsan. Aliquam commodo congue urna vel sollicitudin. Nullam in tempor felis. Maecenas ornare tempor turpis id accumsan.</p>
+								</div>
+
+								<div class="commentBox">
+									<div class="likeBtns">
+										<a class="countLike" title="Me gusta" href="#">21</a>
+										<a class="countDislike" title="No me gusta" href="#">3</a>
+									</div>
+									<img src="statics/img/avatarUser.jpg" />
+									<p class="comment">Ut vitae arcu id felis bibendum blandit sollicitudin sed nisi. Vestibulum non consectetur enim. Sed enim purus, faucibus et rhoncus convallis, mattis ut urna. Integer quam ligula, lacinia eget arcu et, molestie ullamcorper arcu. Curabitur vitae rutrum leo. Aliquam commodo congue urna vel sollicitudin. Nullam in tempor felis. Maecenas ornare tempor turpis id accumsan.</p>
+								</div>
+
+								<a class="btnAddComment btn" title="Agregar Comentario" href="#"><span class="hidden">Agregar Comentario</span></a>
+								<a class="btnSeeMore btn" title="Ver más" href="">Ver más.</a>
+								<div class="clear"></div>
+							</div><!-- #opinionsSection -->
 							
 							<div class="clear"><!-- clear --></div>
 
 							<div class="relatedActivities">
-								<h3>Actividades Relacionadas:</h3>
+								<h3>Otras rutas similares.</h3>
 
 								<div class="activityBlock">
 									<span class="imageContainer">
@@ -187,10 +246,9 @@
 									</span>
 
 									<ul class="dataList">
-										<li><span>Lugar:&nbsp;</span> Cozumel</li>
-										<li><span>Actividad:</span> Caminata, Rapel</li>
-										<li><span>Calificaci&oacute;n:</span> 9.5</li>
-										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+										<li><strong>Lugar:&nbsp;</strong> Cozumel</li>
+										<li><strong>Actividad:</strong> Caminata, Rapel</li>
+										<li><strong>Ruta:</strong> </li>
 									</ul>
 
 									<ul class="activitiesIcons">
@@ -198,8 +256,6 @@
 										<li><img src="statics/img/icons/hike_gray.jpg" /></li>
 										<li><img src="statics/img/icons/bike_gray.jpg" /></li>
 										<li><img src="statics/img/icons/water_gray.jpg" /></li>
-										<li><img src="statics/img/icons/air_gray.jpg" /></li>
-										<li><img src="statics/img/icons/atv_gray.jpg" /></li>
 									</ul>
 									<div class="clear"><!-- clear --></div>
 								</div><!-- .activityBlock -->
@@ -210,10 +266,9 @@
 									</span>
 
 									<ul class="dataList">
-										<li><span>Lugar:&nbsp;</span> Cozumel</li>
-										<li><span>Actividad:</span> Caminata, Rapel</li>
-										<li><span>Calificaci&oacute;n:</span> 9.5</li>
-										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+										<li><strong>Lugar:&nbsp;</strong> Cozumel</li>
+										<li><strong>Actividad:</strong> Caminata, Rapel</li>
+										<li><strong>Ruta:</strong> </li>									
 									</ul>
 
 									<ul class="activitiesIcons">
@@ -231,10 +286,9 @@
 									</span>
 
 									<ul class="dataList">
-										<li><span>Lugar:&nbsp;</span> Cozumel</li>
-										<li><span>Actividad:</span> Caminata, Rapel</li>
-										<li><span>Calificaci&oacute;n:</span> 9.5</li>
-										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+										<li><strong>Lugar:&nbsp;</strong> Cozumel</li>
+										<li><strong>Actividad:</strong> Caminata, Rapel</li>
+										<li><strong>Ruta:</strong> </li>									
 									</ul>
 
 									<ul class="activitiesIcons">
@@ -249,10 +303,9 @@
 									</span>
 
 									<ul class="dataList">
-										<li><span>Lugar:&nbsp;</span> Cozumel</li>
-										<li><span>Actividad:</span> Caminata, Rapel</li>
-										<li><span>Calificaci&oacute;n:</span> 9.5</li>
-										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+										<li><strong>Lugar:&nbsp;</strong> Cozumel</li>
+										<li><strong>Actividad:</strong> Caminata, Rapel</li>
+										<li><strong>Ruta:</strong> </li>										
 									</ul>
 
 									<ul class="activitiesIcons">
@@ -269,10 +322,9 @@
 									</span>
 
 									<ul class="dataList">
-										<li><span>Lugar:&nbsp;</span> Cozumel</li>
-										<li><span>Actividad:</span> Caminata, Rapel</li>
-										<li><span>Calificaci&oacute;n:</span> 9.5</li>
-										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+										<li><strong>Lugar:&nbsp;</strong> Cozumel</li>
+										<li><strong>Actividad:</strong> Caminata, Rapel</li>
+										<li><strong>Ruta:</strong> </li>									
 									</ul>
 
 									<ul class="activitiesIcons">
@@ -291,10 +343,9 @@
 									</span>
 
 									<ul class="dataList">
-										<li><span>Lugar:&nbsp;</span> Cozumel</li>
-										<li><span>Actividad:</span> Caminata, Rapel</li>
-										<li><span>Calificaci&oacute;n:</span> 9.5</li>
-										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+										<li><strong>Lugar:&nbsp;</strong> Cozumel</li>
+										<li><strong>Actividad:</strong> Caminata, Rapel</li>
+										<li><strong>Ruta:</strong> </li>										
 									</ul>
 
 									<ul class="activitiesIcons">
@@ -311,10 +362,9 @@
 									</span>
 
 									<ul class="dataList">
-										<li><span>Lugar:&nbsp;</span> Cozumel</li>
-										<li><span>Actividad:</span> Caminata, Rapel</li>
-										<li><span>Calificaci&oacute;n:</span> 9.5</li>
-										<li><span>Nivel de Aventura:</span> 1, 2 y 3</li>
+										<li><strong>Lugar:&nbsp;</strong> Cozumel</li>
+										<li><strong>Actividad:</strong> Caminata, Rapel</li>
+										<li><strong>Ruta:</strong> </li>								
 									</ul>
 
 									<ul class="activitiesIcons">
@@ -324,28 +374,21 @@
 								</div><!-- .activityBlock -->
 
 								<div class="clear"><!-- clear --></div>
-							</div>
+							</div><!-- .related -->
 
 						</div><!-- .bodyDetail -->
 					</div><!-- #detailContent -->
 					<!-- - - - - - - - - - - - - - - - - - termina detail container - - - - - - - - - - - - - - -->
-
-
-					<!--p style="font-family:'YanoneBold'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique molestie varius. Phasellus eget nulla venenatis, malesuada eros at, facilisis tellus. Cras tempor metus sit amet libero venenatis, id congue ipsum interdum. Sed bibendum lacus a odio auctor laoreet. Morbi tellus massa, ullamcorper ut semper quis, interdum et neque. Aenean id nisi imperdiet, dictum justo non, volutpat nibh. Morbi mollis orci in faucibus condimentum. Cras pretium quis lorem et tempor. Nulla consectetur ultrices elit, id sollicitudin nunc auctor eu. Etiam rhoncus molestie lacus eget pretium. Nunc convallis quam vitae pharetra fermentum.</p>
-
-					<p style="font-family:'YanoneLight'">Curabitur auctor eros eget eros vehicula, sit amet scelerisque massa fringilla. Curabitur rutrum tincidunt mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam malesuada sit amet tellus sed viverra. Aliquam molestie facilisis erat nec luctus. Duis eu purus sollicitudin, hendrerit lacus id, dictum neque. Maecenas vestibulum fringilla feugiat. Vestibulum luctus leo eu molestie sollicitudin. Aliquam non enim vulputate, tristique odio laoreet, pretium dolor. Proin commodo mauris ac dui pulvinar, non mollis nulla faucibus.</p>
-
-					<p style="font-family:'YanoneRegular'">Proin adipiscing ut turpis non condimentum. Nullam eu pharetra tellus, ac mattis nunc. Vestibulum tristique lacus quis rutrum pretium. Donec elementum augue ut enim feugiat, et sagittis libero laoreet. Mauris hendrerit lacus eget ante auctor sollicitudin. Maecenas placerat metus molestie dui facilisis, nec pulvinar erat fermentum. Quisque eu vehicula felis. Donec bibendum risus ut felis dapibus sollicitudin.</p>
-
-					<p style="font-family:'YanoneThin'">Sed diam magna, aliquam eu orci eget, suscipit pulvinar orci. Cras vitae posuere sapien. Suspendisse potenti. Nulla non interdum risus, vitae malesuada purus. Fusce convallis sagittis lectus, ornare dignissim ligula ullamcorper ac. Fusce faucibus nunc vitae est feugiat lobortis. Sed aliquet consectetur diam. Praesent ultricies nisl at fermentum sodales. Sed id pretium enim. Donec molestie porttitor elit vel fermentum. Nullam metus mauris, placerat eu tincidunt quis, dictum egestas eros. Donec lacinia ac metus non posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas ac dolor blandit massa lacinia blandit sit amet nec dolor. Nulla purus eros, venenatis non mi at, rhoncus hendrerit risus. Curabitur in sollicitudin eros, non eleifend velit.</p-->
 				</div><!-- #content -->
 
 
 
 				<!--     ****************     #footer   *******************     -->
 				<div id="footer">
-					<a href="#">Legales</a>
-					<p>YalKu 2013</p>
+					<div class="legalesContainer">
+						<a href="#">Legales</a>
+						<p>YalKu 2013</p>
+					</div>
 				</div><!-- #footer -->
 
 			</div><!-- #container -->

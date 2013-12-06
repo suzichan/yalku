@@ -27,7 +27,7 @@
 
 			<div id="loginWrapper" class="connectModalWindow">
 				<div class="container">
-					<a class="btn btnClose" href="#">X</a>
+					<a class="btn btnClose" title="Cerrar" href="#"><span class="hidden">X</span></a>
 					<h4>CONÉCTATE UTILIZANDO</h4>
 					<div class="loginSocialBtns">
 						<a class="btn btnFacebook" href="#"><span class="hidden">f Connect</span></a>
@@ -40,14 +40,14 @@
 						<fieldset>
 							<div class="row">
 								<label>Correo electrónico</label>
-								<input type="text" name="" value="ejemplo@dominio.com" />
+								<input type="text" name="" value="" placeholder="ejemplo@dominio.com" />
 							</div>
 							<div class="row">
 								<label>Contraseña</label>
-								<input type="password" name="" value="jfkafhdjalfhd" />
+								<input type="password" name="" value="" placeholder="jfkafhdjalfhd" />
 							</div>
 							<div class="horizontalSeparator"><!-- separator --></div>
-							<input type="submit" value="CREAR CUENTA" />
+							<input class="btnSubmit" type="submit" value="CREAR CUENTA" />
 						</fieldset>
 					</form>
 				</div>
@@ -56,7 +56,7 @@
 
 			<div id="registerWrapper" class="connectModalWindow">
 				<div class="container">
-					<a class="btn btnClose" href="#">X</a>
+					<a class="btn btnClose" title="Cerrar" href="#"><span class="hidden">X</span></a>
 					<h4>CONÉCTATE UTILIZANDO</h4>
 					<div class="loginSocialBtns">
 						<a class="btn btnFacebook" href="#"><span class="hidden">f Connect</span></a>
@@ -70,34 +70,34 @@
 						<fieldset>
 							<div class="row">
 								<label>* NOMBRE COMPLETO:</label>
-								<input type="text" name="" value="ejemplo@dominio.com" />
+								<input type="text" name="" value="" placeholder="" />
 							</div>
 							<div class="row">
 								<label>* USUARIO:</label>
-								<input type="text" name="" value="jfkafhdjalfhd" />
+								<input type="text" name="" value="" placeholder="" />
 							</div>
 							<div class="row">
 								<label>* CONTRASEÑA:</label>
-								<input type="password" name="" value="ejemplo@dominio.com" />
+								<input type="password" name="" value="" placeholder="*********" />
 							</div>
 							<div class="row">
 								<label>* CORREO ELECTRÓNICO:</label>
-								<input type="text" name="" value="jfkafhdjalfhd" />
+								<input type="text" name="" value="" placeholder="ejemplo@dominio.com" />
 							</div>
 							<div class="row">
 								<label>&nbsp;&nbsp;CIUDAD:</label>
-								<input type="text" name="" value="ejemplo@dominio.com" />
+								<input type="text" name="" value="" placeholder="" />
 							</div>
 							<div class="row">
 								<label>* SEXO:</label>
-								<input type="text" name="" value="jfkafhdjalfhd" />
+								<input type="text" name="" value="" placeholder="" />
 							</div>
 							<div class="row">
 								<label>* FECHA DE NACIMIENTO:</label>
-								<input type="text" name="" value="jfkafhdjalfhd" />
+								<input type="text" name="" value="" placeholder="DD/MM/AAAA" />
 							</div>
 							<p>* CAMPO OBLIGATORIO</p>
-							<input type="submit" value="ENVIAR" />
+							<input class="btnSubmit" type="submit" value="ENVIAR" />
 						</fieldset>
 					</form>
 					<div class="clear"></div>
@@ -121,8 +121,8 @@
 							<input type="text" placeholder="Escribe un lugar, actividad o deporte" />
 						</div>
 						<ul class="menuLogin menuHorizontal">
-							<li class="cl-effect-5"><a title="REGISTRO" href="#"><span data-hover="REGISTRO">REGISTRO</span></a></li><span class="separator"><!-- separador --></span>
-							<li class="cl-effect-5"><a title="LOGIN" href="#"><span data-hover="LOGIN">LOGIN</span></a></li>
+							<li class="cl-effect-5"><a id="linkRegister" title="REGISTRO" href="#"><span data-hover="REGISTRO">REGISTRO</span></a></li><span class="separator"><!-- separador --></span>
+							<li class="cl-effect-5"><a id="linkLogin" title="LOGIN" href="#"><span data-hover="LOGIN">LOGIN</span></a></li>
 						</ul>
 						<div class="menuApps displayLogos hidden">
 							<a class="logoStore" title="YALKU en App Store" href="#"><img src="statics/img/logo_apple.jpg" /></a>
@@ -135,8 +135,7 @@
 					<div class="bottomContainer container">
 						<ul class="menuMain menuHorizontal">
 							<li><a title="EXPLORAR" href="#" data-hover="EXPLORAR">EXPLORAR</a></li><span class="separator"><!-- separador --></span>
-							<li><a title="PLANEAR" href="#" data-hover="PLANEAR">PLANEAR</a></li><span class="separator"><!-- separador --></span>
-							<li><a title="FOROS" href="#" data-hover="FOROS">FOROS</a></li><span class="separator"><!-- separador --></span>
+							<li><a title="BLOG" href="#" data-hover="PLANEAR">BLOG</a></li><span class="separator"><!-- separador --></span>
 							<li><a title="CONOCE MÁS" href="#" data-hover="CONOCE MÁS">CONOCE MÁS</a></li>
 						</ul>
 						<ul class="menuSocial menuHorizontal">
@@ -339,105 +338,101 @@
 						<div class="clear"><!-- clear --></div>
 					</div><!-- .mediaContainer -->
 					<!-- - - - - - - - - - - - - - - - - - termina home container - - - - - - - - - - - - - - -->
-
-
 				</div><!-- #content -->
-
-
-
-				<!--     ****************     #Listas de Rutas en el Home   *******************     -->
-				<div id="routesList">
-					<div class="header">
-						<div class="select">
-							<select>
-								<option>LISTAS DE RUTAS</option>
-								<option>LISTA DE RUTAS 1</option>
-								<option>LISTA DE RUTAS 2</option>
-								<option>LISTA DE RUTAS 3</option>
-								<option>LISTA DE RUTAS 4</option>
-								<option>LISTA DE RUTAS 5</option>
-							</select>
-						</div>
-						<input id="nameList" type="text" name="" value="LISTA DE RUTAS #UNO" placeholder="NOMBRE DE LA LISTA (Ej. Lista de Chiapas)" />
-						<input id="deleteList" type="button" name="" value="Eliminar Lista" /><span class="separator"><!-- separador --></span>
-						<input id="syncList" type="button" name="" value="Sincronizar Lista" />
-						<a id="btnMinRouteList" class="btn btnMinimize" title="Minimizar" href="#">--</a>
-					</div><!-- .header -->
-					
-					<div id="photoRoutesList">
-						<a class="btn btnArrow btnToLeft" title="Anterior" href="#"><span class="hidden">Anterior</span><</a>
-						<a class="btn btnArrow btnToRight" title="Siguiente" href="#"><span class="hidden">Siguiente</span>></a>
-						
-
-						<div class="containerList">
-							<div id="routesBoxContainer">
-								<div class="routeBox">
-									<a class="btn btnDelete" title="Eliminar ruta" href="#">X</a>
-									<ul class="description">
-										<li><h4>Nombre de la ruta</h4></li>
-										<li>Ciudad</li>
-										<li>Actividad: <img alt="Hike" src="statics/img/icons/hike_black.jpg" /></li>
-									</ul>
-									<img class="routeImg" src="statics/img/home/img1.jpg" />
-								</div>
-
-
-								<div class="routeBox">
-									<a class="btn btnDelete" title="Eliminar ruta" href="#">X</a>
-									<ul class="description">
-										<li><h4>Nombre de la ruta</h4></li>
-										<li>Ciudad</li>
-										<li>Actividad: <img alt="Hike" src="statics/img/icons/hike_black.jpg" /></li>
-									</ul>
-									<img class="routeImg" src="statics/img/home/img2.jpg" />
-								</div>
-
-
-								<div class="routeBox">
-									<a class="btn btnDelete" title="Eliminar ruta" href="#">X</a>
-									<ul class="description">
-										<li><h4>Nombre de la ruta</h4></li>
-										<li>Ciudad</li>
-										<li>Actividad: <img alt="Hike" src="statics/img/icons/hike_black.jpg" /></li>
-									</ul>
-									<img class="routeImg" src="statics/img/home/img3.jpg" />
-								</div>
-
-
-								<div class="routeBox">
-									<a class="btn btnDelete" title="Eliminar ruta" href="#">X</a>
-									<ul class="description">
-										<li><h4>Nombre de la ruta</h4></li>
-										<li>Ciudad</li>
-										<li>Actividad: <img alt="Hike" src="statics/img/icons/hike_black.jpg" /></li>
-									</ul>
-									<img class="routeImg" src="statics/img/home/img2.jpg" />
-								</div>
-
-
-								<div class="routeBox">
-									<a class="btn btnDelete" title="Eliminar ruta" href="#">X</a>
-									<ul class="description">
-										<li><h4>Nombre de la ruta</h4></li>
-										<li>Ciudad</li>
-										<li>Actividad: <img alt="Hike" src="statics/img/icons/hike_black.jpg" /></li>
-									</ul>
-									<img class="routeImg" src="statics/img/home/img3.jpg" />
-								</div>
-
-
-								<div class="clear"></div>
-							</div><!-- #routesBoxContainer -->
-						</div><!-- .containerList -->
-					</div><!-- .photosList" -->
-				</div>
-
 
 
 				<!--     ****************     #footer   *******************     -->
 				<div id="footer">
-					<a href="#">Legales</a>
-					<p>YalKu 2013</p>
+					<div class="legalesContainer">
+						<a href="#">Legales</a>
+						<p>YalKu 2013</p>
+					</div>
+					<!--     ****************     #Listas de Rutas en el Home   *******************     -->
+					<div id="routesList" class="showed">
+						<div class="header">
+							<div class="select">
+								<select>
+									<option>LISTAS DE RUTAS</option>
+									<option>LISTA DE RUTAS 1</option>
+									<option>LISTA DE RUTAS 2</option>
+									<option>LISTA DE RUTAS 3</option>
+									<option>LISTA DE RUTAS 4</option>
+									<option>LISTA DE RUTAS 5</option>
+								</select>
+							</div>
+							<input id="nameList" type="text" name="" value="LISTA DE RUTAS #UNO" placeholder="NOMBRE DE LA LISTA (Ej. Lista de Chiapas)" />
+							<input id="deleteList" type="button" name="" value="Eliminar Lista" /><span class="separator"><!-- separador --></span>
+							<input id="syncList" type="button" name="" value="Sincronizar Lista" />
+							<a id="btnMinRouteList" class="btn btnMinimize" title="Esconder listas de rutas" href="#"><span></span></a>
+						</div><!-- .header -->
+						
+						<div id="photoRoutesList">
+							<a class="btn btnArrow btnToLeft" title="Anterior" href="#"><span class="hidden">Anterior</span><</a>
+							<a class="btn btnArrow btnToRight" title="Siguiente" href="#"><span class="hidden">Siguiente</span>></a>
+							
+
+							<div class="containerList">
+								<div id="routesBoxContainer">
+									<div class="routeBox">
+										<a class="btn btnDelete" title="Eliminar ruta" href="#">X</a>
+										<ul class="description">
+											<li><h4>Nombre de la ruta</h4></li>
+											<li>Ciudad del Carmen</li>
+											<li><img alt="Hike" src="statics/img/icons/hike_black.jpg" /></li>
+										</ul>
+										<img class="routeImg" src="statics/img/home/img1.jpg" />
+									</div>
+
+
+									<div class="routeBox">
+										<a class="btn btnDelete" title="Eliminar ruta" href="#">X</a>
+										<ul class="description">
+											<li><h4>Nombre de la ruta</h4></li>
+											<li>Ciudad del Carmen</li>
+											<li><img alt="Hike" src="statics/img/icons/hike_black.jpg" /></li>
+										</ul>
+										<img class="routeImg" src="statics/img/home/img2.jpg" />
+									</div>
+
+
+									<div class="routeBox">
+										<a class="btn btnDelete" title="Eliminar ruta" href="#">X</a>
+										<ul class="description">
+											<li><h4>Nombre de la ruta</h4></li>
+											<li>Ciudad del Carmen</li>
+											<li><img alt="Hike" src="statics/img/icons/hike_black.jpg" /></li>
+										</ul>
+										<img class="routeImg" src="statics/img/home/img3.jpg" />
+									</div>
+
+
+									<div class="routeBox">
+										<a class="btn btnDelete" title="Eliminar ruta" href="#">X</a>
+										<ul class="description">
+											<li><h4>Nombre de la ruta</h4></li>
+											<li>Ciudad del Carmen</li>
+											<li><img alt="Hike" src="statics/img/icons/hike_black.jpg" /></li>
+										</ul>
+										<img class="routeImg" src="statics/img/home/img2.jpg" />
+									</div>
+
+
+									<div class="routeBox">
+										<a class="btn btnDelete" title="Eliminar ruta" href="#">X</a>
+										<ul class="description">
+											<li><h4>Nombre de la ruta</h4></li>
+											<li>Ciudad del Carmen</li>
+											<li><img alt="Hike" src="statics/img/icons/hike_black.jpg" /></li>
+										</ul>
+										<img class="routeImg" src="statics/img/home/img3.jpg" />
+									</div>
+
+
+									<div class="clear"></div>
+								</div><!-- #routesBoxContainer -->
+							</div><!-- .containerList -->
+						</div><!-- .photosList" -->
+					</div><!-- #routesList -->
 				</div><!-- #footer -->
 
 			</div><!-- #container -->

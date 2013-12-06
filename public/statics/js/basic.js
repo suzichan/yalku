@@ -10,9 +10,41 @@ jQuery.browser.mozilla = /mozilla/.test(navigator.userAgent.toLowerCase()) && !/
 //if(jQuery.browser.mozilla) { alert("yeah"); } //ejemplo de uso de la variable
 /***************** termina reconocimiento de navegador **************/
 
+$("#btnMinRouteList").click(function(e) {
+	e.preventDefault();
+	if( $("#routesList").hasClass("showed") ) {
+		$("#routesList").stop().animate({
+		top: "-40px"
+		}, '100');
+		$("#routesList").removeClass("showed");
+		$(this).attr("title","Mostrar");
+	} else {
+		$("#routesList").stop().animate({
+		top: "-165px"
+		}, '200');
+		$("#routesList").addClass("showed");
+		$(this).attr("title","Esconder");
+	}
+});
 
+$(".connectModalWindow").hide();
 
-/***************** start box hover effect **************/
+$("#linkRegister").click(function(e){
+	e.preventDefault();
+	$("#registerWrapper").fadeIn("fast");
+});
+
+$("#linkLogin").click(function(e){
+	e.preventDefault();
+	$("#loginWrapper").fadeIn("fast");
+});
+
+$(".connectModalWindow .btnClose").click(function(e){
+	e.preventDefault();
+	$(".connectModalWindow").fadeOut();
+});
+
+/***************** start main box home hover effect **************/
 $(".mediaBox").mouseenter( function(e) {
 	e.preventDefault();
 	var alturaMin = 192;
@@ -43,7 +75,22 @@ $(".mediaBox").mouseenter( function(e) {
 		bottom: "-153px"
 		}, '100');
 } );
-/***************** finish box hover effect **************/
+/***************** finish main box home hover effect **************/
+
+/***************** start box routes list hover effect **************/
+$(".routeBox").mouseenter( function(e) {
+	e.preventDefault();
+	$("ul.description",this).stop().animate({
+		bottom: "0px"
+		}, '200');
+}).mouseleave( function(e) {
+	e.preventDefault();
+	$("ul.description",this).stop().animate({
+		bottom: "-105px"
+		}, '100');
+} );
+/***************** finish box routes list hover effect **************/
+
 
 /***************** start carousel **************/
 $(".auto .jCarouselLite").jCarouselLite({
@@ -62,6 +109,5 @@ $("#carouselTips button").click(function(e){
 	$(this).addClass("selected");
 });
 /***************** finish carousel **************/
-
 
 }); //termina document ready

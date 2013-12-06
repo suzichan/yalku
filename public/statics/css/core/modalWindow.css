@@ -20,28 +20,37 @@
 
  
 /*  ------------------  Login y Registro  ------------------- */
-.connectModalWindow { position: absolute; height: 100%; z-index: 6; top: 0; left: 0; width: 100%; background: rgba(0,0,0,.3);  }
-	.connectModalWindow .container { position: relative; width: 560px; margin: 160px auto; background: #000; padding: 30px 70px; }
-		.connectModalWindow .btnClose { position: absolute; top: 10px; right: 15px; }
-		.connectModalWindow h4 { margin-top: 10px; font-family: Verdana, Geneva, sans-serif; font-size: 14px; text-align: center; line-height: 20px; }
+.connectModalWindow { position: absolute; height: 100%; z-index: 6; top: 0; left: 0; width: 100%; background: rgba(0,0,0,.8); *background: url("../../img/bg-transparente-0.8.png") repeat; }
+	.connectModalWindow .container { position: relative; width: 530px; margin: 160px auto; background: #000; padding: 30px 70px; }
+		.connectModalWindow .btnClose { position: absolute; width: 16px; height: 16px; top: 10px; right: 15px; background: url("../../img/btn_close_window.jpg") no-repeat; }
+		.connectModalWindow h4 { margin-top: 10px; font-family: Verdana, Geneva, sans-serif !important; font-size: 14px; text-align: center; line-height: 20px; color: #fff !important; font-weight: normal !important; }
 			.connectModalWindow h4.second span { display: inline-block; width: 25px; height: 12px; background: url("../../img/icons/email_icon.jpg") no-repeat top right; }
 		.connectModalWindow h4.second { width: auto; text-align: left; }
 		.connectModalWindow .loginSocialBtns { height: 30px; margin-top: 35px; }
 			.connectModalWindow .loginSocialBtns .btn { display: block; float: left; height: 25px; }
 			.connectModalWindow .loginSocialBtns .btnFacebook { width: 107px; margin-left: 150px; background: url("../../img/btn_connect_fb.jpg") no-repeat top center; }
 			.connectModalWindow .loginSocialBtns .btnTwitter { width: 151px; margin-left: 10px; background: url("../../img/btn_connect_tw.jpg") no-repeat top center; }
-		.connectModalWindow img.separator { display: block; margin: 30px 0 0 15px; width: 531px; height: 20px; }
+		.connectModalWindow img.separator { display: block; margin: 30px auto 20px; width: 530px; height: 20px; }
+		.connectModalWindow form p { text-align: right; margin-top: 25px; }
+		.connectModalWindow .btnSubmit { float: right; margin-top: 25px; border: 1px solid #a3a3a3 !important; border-top: 2px solid #a3a3a3 !important; background: #61a63b !important; padding: 10px 30px; text-align: center; color: #fff; font-size: inherit; }
+		.connectModalWindow form .horizontalSeparator { height: 1px; width: 100%; background: #262626; margin-top: 45px; }
 
 
 /*  ------------------  Login  ------------------- */
 #loginWrapper { display: none; }
-
-
+#loginWrapper form { font-size: 14px; margin-top: 40px; }
+#loginWrapper .row, #loginWrapper .row input { height: 31px; }
+	#loginWrapper .row { margin-top: 10px; }
+	#loginWrapper .row label, #loginWrapper .row input { display: inline-block; }
+	#loginWrapper .row label { width: 200px; margin-left: 45px; margin-right: 10px; text-transform: uppercase; }
+	#loginWrapper .row input { width: 229px; padding: 0 10px; appearance: textfield; -moz-appearance: textfield; -webkit-appearance: textfield; background: url("../../img/bg_input_register.jpg") no-repeat center top; border: none; color: #fff; font-size: inherit; }
+	#loginWrapper .btnSubmit { margin-top: 30px; }
 
 
 /*  ------------------  Registro  ------------------- */
-#registerWrapper form { width: 450px; float: right; background: rgba(0,255,2,.1); font-size: 14px; }
-#registerWrapper .row, #registerWrapper input { height: 44px; }
+#registerWrapper { display: none; }
+#registerWrapper form { width: 450px; float: right; font-size: 14px; margin-top: 15px; }
+#registerWrapper .row, #registerWrapper .row input { height: 44px; }
 	#registerWrapper .row { background: url("../../img/bg_input_register.jpg") no-repeat center top; margin-top: 10px; }
-		#registerWrapper input { appearance: textfield; -moz-appearance: textfield; -webkit-appearance: textfield; background: none; border: none; color: #fff; font-size: inherit; }
-		#registerWrapper input, #registerWrapper label { display: inline-block; text-indent: 15px; }
+		#registerWrapper .row input { appearance: textfield; -moz-appearance: textfield; -webkit-appearance: textfield; background: none; border: none; color: #fff; font-size: inherit; width: 235px; }
+		#registerWrapper .row input, #registerWrapper label { display: inline-block; text-indent: 15px; }
