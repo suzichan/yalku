@@ -10,6 +10,11 @@ jQuery.browser.mozilla = /mozilla/.test(navigator.userAgent.toLowerCase()) && !/
 //if(jQuery.browser.mozilla) { alert("yeah"); } //ejemplo de uso de la variable
 /***************** termina reconocimiento de navegador **************/
 
+
+$("#routesList").css("top","-40px");
+$("#routesList").removeClass("showed");
+$(this).attr("title","Mostrar");
+
 $("#btnMinRouteList").click(function(e) {
 	e.preventDefault();
 	if( $("#routesList").hasClass("showed") ) {

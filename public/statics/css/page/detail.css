@@ -7,7 +7,7 @@
  * @creator Susana Aguirre
  * @project YalKu Mexico
  * @file detail.css
- * @05/SEP/2013
+ * @17/DIC/2013
  */
 /*  ------------------  DETAIL  ------------------- */
 #detailContent { background: #ffffff; color: #000; }
@@ -26,11 +26,11 @@
 #detailContent .place, #detailContent .difficulty, #detailContent h3 { font-weight: bold; font-size: 14px; }
 #detailContent .left, #detailContent .right { float: left; padding-bottom: 60px; padding-top: 18px; }
 #detailContent .left, #opinionsSection { padding-left: 40px; }
-#detailContent h3 { padding: 10px 0; }
+#detailContent h3 { padding: 10px 0; font-size: 12px; }
 	
 #detailContent .left { width: 445px; }
-	#detailContent .place, #detailContent .difficulty { height: 37px; line-height: 37px; margin-bottom: 20px; }
-	#detailContent .place { display: inline-block; padding-right: 46px; height: 37px; line-height: 37px; background: url("../../img/icons/locate.jpg") no-repeat top right; }
+	#detailContent .place, #detailContent .difficulty { height: 37px; line-height: 37px; }
+	#detailContent .place { display: inline-block; padding-right: 46px; height: 37px; line-height: 37px; background: url("../../img/icons/locate.jpg") no-repeat top right; margin-bottom: 20px; }
 		#detailContent .place strong { font-family: Verdana, Geneva, sans-serif; font-weight: normal; }
 	#detailContent .difficulty { text-align: right; }
 
@@ -52,7 +52,7 @@
 		#filtersList .atv:hover, #filtersList .atv.selected { background-position: -225px -45px; }
 		
 	#detailContent .routesList { margin-top: 40px; list-style-type: disc; list-style-position: inside; }
-		#detailContent .routesList li { margin-bottom: 10px; font-family: Verdana, Geneva, sans-serif; font-weight: bold; font-size: 14px; }
+		#detailContent .routesList li { margin-bottom: 10px; font-family: Verdana, Geneva, sans-serif; font-weight: bold; font-size: 12px; }
 		#detailContent .routesList li.selected, #detailContent .routesList li:hover { color: #6ab242; }
 		#detailContent .routesList li:hover { cursor: pointer; }
 
@@ -67,6 +67,8 @@
 			.btnShareRoute { padding-left: 38px; height: 29px; line-height: 29px; background: url("../../img/icons/share_route.jpg") no-repeat 0 0; margin-left: 40px; }
 
 #opinionsSection { width: 930px; padding-bottom: 50px; }
+	#opinionsSection textarea { width: 100%; height: 95px; font-size: 12px; line-height: 18px; padding: 10px 15px; color: #666; }
+	#opinionsSection .commentBox button { background: #61a63b; color: #ffffff; font-size: inherit; padding: 10px 30px; border: 2px solid #a3a3a3; text-transform: uppercase; float: right; margin-top: 10px; clear: both; }
 	#opinionsSection .commentBox { margin: 35px 0px; min-height: 76px; font-size: 14px; line-height: 24px; }
 		.likeBtns { width: 60px; float: left; height: 76px; }
 			.likeBtns a { display: block; width: auto; height: 31px; color: #000; }
@@ -79,7 +81,7 @@
  	.btnAddComment { float: left; width: 142px; height: 27px; background: url("../../img/btn_agregar_comentario.jpg") no-repeat 0 0; }
  	.btnSeeMore { float: right; width: 200px; height: 16px;  padding-right: 18px; margin: 5px; text-align: right; color: #000; font-size: 14px; font-weight: bold; background: url("../../img/bg_btn_ver_mas") top right no-repeat; }
 
-.relatedActivities { padding-left: 50px; padding-bottom: 20px; }
+.relatedActivities { padding-left: 50px; padding-bottom: 60px; }
 	.activityBlock, .activityBlock .imageContainer, .activityBlock .imageContainer img { height: 142px; }
 	.activityBlock { width: 430px; float: left; margin: 20px 20px 20px 0px; overflow: hidden; }
 		.activityBlock .imageContainer { display: block; float: left; position: relative; width: 211px; overflow: hidden; }

@@ -13,8 +13,9 @@
 		<script src="statics/js/modernizr.custom.js"></script>
 	</head>
 	<body>
+		<div id="headerShadow"></div>
+		<div id="footerShadow"></div>
 		<div id="wrapper">
-			
 			<div id="loginWrapper" class="connectModalWindow">
 				<div class="container">
 					<a class="btn btnClose" title="Cerrar" href="#"><span class="hidden">X</span></a>
@@ -36,6 +37,8 @@
 								<label>Contraseña</label>
 								<input type="password" name="" value="" placeholder="jfkafhdjalfhd" />
 							</div>
+							<br />
+							<p><a title="RECUPERAR CONTRASEÑA" href="#">RECUPERAR CONTRASEÑA</a></p>
 							<div class="horizontalSeparator"><!-- separator --></div>
 							<input class="btnSubmit" type="submit" value="CREAR CUENTA" />
 						</fieldset>
@@ -59,7 +62,15 @@
 					<form action="">
 						<fieldset>
 							<div class="row">
-								<label>* NOMBRE COMPLETO:</label>
+								<label>* NOMBRE(S):</label>
+								<input type="text" name="" value="" placeholder="" />
+							</div>
+							<div class="row">
+								<label>* APELLIDO PATERNO:</label>
+								<input type="text" name="" value="" placeholder="" />
+							</div>
+							<div class="row">
+								<label>&nbsp;&nbsp;APELLIDO MATERNO:</label>
 								<input type="text" name="" value="" placeholder="" />
 							</div>
 							<div class="row">
@@ -230,6 +241,13 @@
 									<p class="comment">Ut vitae arcu id felis bibendum blandit sollicitudin sed nisi. Vestibulum non consectetur enim. Sed enim purus, faucibus et rhoncus convallis, mattis ut urna. Integer quam ligula, lacinia eget arcu et, molestie ullamcorper arcu. Curabitur vitae rutrum leo. Aliquam commodo congue urna vel sollicitudin. Nullam in tempor felis. Maecenas ornare tempor turpis id accumsan.</p>
 								</div>
 
+								<div class="commentBox">
+									<textarea>Ut vitae arcu id felis bibendum blandit sollicitudin sed nisi. Vestibulum non consectetur enim. Sed enim purus, faucibus et rhoncus convallis, mattis ut urna. Integer quam ligula, lacinia eget arcu et, molestie ullamcorper arcu. Curabitur vitae rutrum leo. Aliquam commodo congue urna vel sollicitudin. Nullam in tempor felis. Maecenas ornare tempor turpis id accumsan. Aliquam commodo congue urna vel sollicitudin. Nullam in tempor felis. Maecenas ornare tempor turpis id accumsan.</textarea>
+									<button>Publicar</button>
+									<div class="clear"></div>
+								</div>
+
+
 								<a class="btnAddComment btn" title="Agregar Comentario" href="#"><span class="hidden">Agregar Comentario</span></a>
 								<a class="btnSeeMore btn" title="Ver más" href="">Ver más.</a>
 								<div class="clear"></div>
@@ -389,6 +407,91 @@
 						<a href="#">Legales</a>
 						<p>YalKu 2013</p>
 					</div>
+					<!--     ****************     #Listas de Rutas en el Home   *******************     -->
+					<div id="routesList" class="showed">
+						<div class="header">
+							<div class="select">
+								<select>
+									<option>LISTAS DE RUTAS</option>
+									<option>LISTA DE RUTAS 1</option>
+									<option>LISTA DE RUTAS 2</option>
+									<option>LISTA DE RUTAS 3</option>
+									<option>LISTA DE RUTAS 4</option>
+									<option>LISTA DE RUTAS 5</option>
+								</select>
+							</div>
+							<input id="nameList" type="text" name="" value="LISTA DE RUTAS #UNO" placeholder="NOMBRE DE LA LISTA (Ej. Lista de Chiapas)" />
+							<input id="deleteList" type="button" name="" value="Eliminar Lista" /><span class="separator"><!-- separador --></span>
+							<input id="syncList" type="button" name="" value="Sincronizar Lista" />
+							<a id="btnMinRouteList" class="btn btnMinimize" title="Esconder listas de rutas" href="#"><span></span></a>
+						</div><!-- .header -->
+						
+						<div id="photoRoutesList">
+							<a class="btn btnArrow btnToLeft" title="Anterior" href="#"><span class="hidden">Anterior</span></a>
+							<a class="btn btnArrow btnToRight" title="Siguiente" href="#"><span class="hidden">Siguiente</span></a>
+							
+							<div class="containerList">
+								<div id="routesBoxContainer">
+									<div class="routeBox">
+										<a class="btn btnDelete" title="Eliminar ruta" href="#"><span class="hidden">X</span></a>
+										<ul class="description">
+											<li><h4>Nombre de la ruta</h4></li>
+											<li>Ciudad del Carmen</li>
+											<li><img alt="Hike" src="statics/img/icons/hike_black.png" /></li>
+										</ul>
+										<img class="routeImg" src="statics/img/home/img1.jpg" />
+									</div>
+
+
+									<div class="routeBox">
+										<a class="btn btnDelete" title="Eliminar ruta" href="#"><span class="hidden">X</span></a>
+										<ul class="description">
+											<li><h4>Nombre de la ruta</h4></li>
+											<li>Ciudad del Carmen</li>
+											<li><img alt="Hike" src="statics/img/icons/hike_black.png" /></li>
+										</ul>
+										<img class="routeImg" src="statics/img/home/img2.jpg" />
+									</div>
+
+
+									<div class="routeBox">
+										<a class="btn btnDelete" title="Eliminar ruta" href="#"><span class="hidden">X</span></a>
+										<ul class="description">
+											<li><h4>Nombre de la ruta</h4></li>
+											<li>Ciudad del Carmen</li>
+											<li><img alt="Hike" src="statics/img/icons/hike_black.png" /></li>
+										</ul>
+										<img class="routeImg" src="statics/img/home/img3.jpg" />
+									</div>
+
+
+									<div class="routeBox">
+										<a class="btn btnDelete" title="Eliminar ruta" href="#"><span class="hidden">X</span></a>
+										<ul class="description">
+											<li><h4>Nombre de la ruta</h4></li>
+											<li>Ciudad del Carmen</li>
+											<li><img alt="Hike" src="statics/img/icons/hike_black.png" /></li>
+										</ul>
+										<img class="routeImg" src="statics/img/home/img2.jpg" />
+									</div>
+
+
+									<div class="routeBox">
+										<a class="btn btnDelete" title="Eliminar ruta" href="#"><span class="hidden">X</span></a>
+										<ul class="description">
+											<li><h4>Nombre de la ruta</h4></li>
+											<li>Ciudad del Carmen</li>
+											<li><img alt="Hike" src="statics/img/icons/hike_black.png" /></li>
+										</ul>
+										<img class="routeImg" src="statics/img/home/img3.jpg" />
+									</div>
+
+
+									<div class="clear"></div>
+								</div><!-- #routesBoxContainer -->
+							</div><!-- .containerList -->
+						</div><!-- .photosList" -->
+					</div><!-- #routesList -->
 				</div><!-- #footer -->
 
 			</div><!-- #container -->
