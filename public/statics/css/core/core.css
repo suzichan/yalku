@@ -115,7 +115,6 @@ body { color: #fff; font-family: Verdana, Geneva, sans-serif; font-size: 100%; f
 					#routesBoxContainer .description li { margin: 10px 12px; }
 					#routesBoxContainer .description img { width: 25px; height: 25px; line-height: 25px; margin-right: 8px; }
 
-
 /*  ------------------  estilos para la scrollbar en chrome  ------------------- */
 ::-webkit-scrollbar { width: 9px; }
 ::-webkit-scrollbar-button {  background-color: blue; }
